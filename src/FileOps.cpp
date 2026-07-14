@@ -140,7 +140,6 @@ BOOL FileWrite (HWND hwnd, LPSTR lpstrFileName, BOOL csv)
 **************************************************************************/
 
 int	SaveData(HWND hwnd, char *szFileName, char *szAppName, BOOL csv)
-
     {
     char    s[240];
 
@@ -162,7 +161,7 @@ int	SaveData(HWND hwnd, char *szFileName, char *szAppName, BOOL csv)
 	Read the datafile. 
 **************************************************************************/
 
-BOOL FileRead (HWND hwnd, LPSTR lpstrFileName)
+BOOL	FileRead (HWND hwnd, LPSTR lpstrFileName)
     {
     FILE	*hFile;
     int		i, j, value, isorig, result;
@@ -211,7 +210,6 @@ BOOL FileRead (HWND hwnd, LPSTR lpstrFileName)
 **************************************************************************/
 
 int	GetData(HWND hwnd, char *szFileName, char *szAppName)
-
     {
     char    s[240];
 
@@ -220,7 +218,6 @@ int	GetData(HWND hwnd, char *szFileName, char *szAppName)
 	{
 	if (!FileRead (hwnd, szFileName))
 	    {
-//	    sprintf (s, "Could not read file %s!", szFileName) ;	// silly virus scanner has a hissy fit on this line of code
 	    sprintf_s (s, 235, "Could not read file %s!", szFileName) ;
 	    MessageBox(hwnd, s, "Sudoku File", MB_ICONEXCLAMATION | MB_OK);
 	    szFileName  [0] = '\0';

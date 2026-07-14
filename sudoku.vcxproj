@@ -267,8 +267,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\FileOps.cpp" />
-    <ClCompile Include="src\SimpleSudoku.cpp" />
     <ClCompile Include="src\Sudoku.cpp" />
+    <ClCompile Include="src\SudokuDisplay.cpp" />
+    <ClCompile Include="src\SudokuEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="src\Sudoku.rc" />

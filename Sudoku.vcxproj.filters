@@ -22,10 +22,13 @@
     <ClCompile Include="src\FileOps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\SimpleSudoku.cpp">
+    <ClCompile Include="src\Sudoku.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Sudoku.cpp">
+    <ClCompile Include="src\SudokuDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SudokuEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

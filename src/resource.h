@@ -14,6 +14,7 @@
 #define IDC_SAVE_CSV                            803
 #define IDM_OPEN                                803
 #define IDC_SAVESUDOKU                          804
+#define IDC_CALCULATE                           1000
 #define IDC_BUTTON1                             1001
 #define IDC_BUTTON2                             1002
 #define IDC_BUTTON3                             1003

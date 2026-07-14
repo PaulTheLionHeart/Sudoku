@@ -2,41 +2,29 @@
 #include <stdio.h>
 #include "sudoku.h"
 
-/*
-int square(int i, int j);
-void set_cell(int i, int j, int n);
-int clear_cell(int i, int j);
-bool is_available(int i, int j, int n);
-bool advance_cell(int i, int j);
-void solve_sudoku(void);
-void init_arrays(void);
-*/
-
 extern	int	ArraySize, SquareSize;			// ArraySize is the size of the side of the puzzle, SquareSize is the size of the side of a square
 
-/* The Sudoku matrix itself. */
-int matrix[HEXARRAYSIZE][HEXARRAYSIZE];
+int	matrix[HEXARRAYSIZE][HEXARRAYSIZE];		// The Sudoku matrix itself
+int	known[HEXARRAYSIZE][HEXARRAYSIZE];		// Which numbers were given as known in the problem
 
-/* Which numbers were given as known in the problem. */
-int known[HEXARRAYSIZE][HEXARRAYSIZE];
+// known[][] indicates cells fixed before solving. Solver-generated values are intentionally not marked
+// as known so that the backtracking algorithm can erase and replace them during the search.
 
-// Which numbers were given in the original problem?
-int	orig[HEXARRAYSIZE][HEXARRAYSIZE];
+int	orig[HEXARRAYSIZE][HEXARRAYSIZE];		// Which numbers were given in the original problem?
 
-/* An array of nine integers, each of which representing a sub-square.
-Each integer has its nth-bit on iff n belongs to the corresponding sub-square. */
+// An array of nine integers, each of which representing a sub-square
+// Each integer has its nth-bit on iff n belongs to the corresponding sub-square. 
 int squares[HEXARRAYSIZE];
 
-/* An array of nine integers, each of which representing a row.
-Each integer has its nth-bit on iff n belongs to the corresponding row. */
+// An array of nine integers, each of which representing a row.
+// Each integer has its nth-bit on iff n belongs to the corresponding row. 
 int rows[HEXARRAYSIZE];
 
-/* An array of nine integers, each of which representing a column.
-Each integer has its nth-bit on iff n belongs to the corresponding column. */
+// An array of nine integers, each of which representing a column.
+// Each integer has its nth-bit on iff n belongs to the corresponding column.
 int cols[HEXARRAYSIZE];
 
-/* An array with some powers of 2 to avoid shifting all the time. */
-int bits[HEXARRAYSIZE + 1];
+int bits[HEXARRAYSIZE + 1];				// An array with some powers of 2 to avoid shifting all the time
 
 /*-----------------------------------------
 	Returns the index of the square the cell (i, j) belongs to

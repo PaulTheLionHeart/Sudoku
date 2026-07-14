@@ -1,4 +1,4 @@
-\# Sudoku
+# Sudoku
 
 
 
@@ -10,11 +10,11 @@ The aim of this project is to preserve the original solving engine while careful
 
 
 
-\## Status
+## Status
 
 
 
-⚠️ \*\*This repository is currently under active development.\*\*
+⚠️ **This repository is currently under active development.**
 
 
 
@@ -22,7 +22,7 @@ The project now builds cleanly as a native x64 Win32 application.
 
 
 
-Both \*\*9×9\*\* and \*\*16×16 hexadecimal Sudoku\*\* are supported using the same well-tested solving engine while providing user interfaces tailored to each board size.
+Both **9×9** and **16×16 hexadecimal Sudoku** are supported using the same well-tested solving engine while providing user interfaces tailored to each board size.
 
 
 
@@ -30,61 +30,61 @@ The project has moved beyond basic modernisation and is now focused on refinemen
 
 
 
-\## Current Features
+## Current Features
 
 
 
-\- Native x64 build
+- Native x64 build
 
-\- Visual Studio 2017 project
+- Visual Studio 2017 project
 
-\- Modern Win32 callback signatures
+- Modern Win32 callback signatures
 
-\- Legacy Win16 declarations removed
+- Legacy Win16 declarations removed
 
-\- Original backtracking Sudoku solver
+- Original backtracking Sudoku solver
 
-\- 9×9 Sudoku support
+- 9×9 Sudoku support
 
-\- 16×16 hexadecimal Sudoku support
+- 16×16 hexadecimal Sudoku support
 
-\- Interactive candidate display
+- Interactive candidate display
 
-\- Mouse-based puzzle editing
+- Mouse-based puzzle editing
 
-\- Undo support
+- Undo support
 
-\- Right-click Original/User clue toggling
+- Right-click Original/User clue toggling
 
-\- Shared board helper architecture
-
-
-
-\## Recent Modernisation
+- Shared board helper architecture
 
 
 
-\- Board display logic separated into `SudokuDisplay.cpp`
-
-\- Cleaner separation between application logic and board display logic
-
-\- Simplified cell-selection and value-placement workflow
-
-\- Separate rendering paths for 9×9 and 16×16 boards
-
-\- Painted 4×4 hexadecimal candidate display
-
-\- Clickable hexadecimal value picker
-
-\- Modern helper functions for board operations
-
-\- Simplified dialog architecture with obsolete legacy flow removed
-
-\- Improved readability and maintainability throughout the codebase
+## Recent Modernisation
 
 
 
-\## Board Design
+- Board display logic separated into `SudokuDisplay.cpp`
+
+- Cleaner separation between application logic and board display logic
+
+- Simplified cell-selection and value-placement workflow
+
+- Separate rendering paths for 9×9 and 16×16 boards
+
+- Painted 4×4 hexadecimal candidate display
+
+- Clickable hexadecimal value picker
+
+- Modern helper functions for board operations
+
+- Simplified dialog architecture with obsolete legacy flow removed
+
+- Improved readability and maintainability throughout the codebase
+
+
+
+## Board Design
 
 
 
@@ -92,7 +92,7 @@ The two board sizes intentionally use different presentation techniques while sh
 
 
 
-\### 9×9 Sudoku
+### 9×9 Sudoku
 
 
 
@@ -100,17 +100,17 @@ Each cell retains the original interactive design:
 
 
 
-\- One large value button
+- One large value button
 
-\- Nine clickable candidate buttons
+- Nine clickable candidate buttons
 
-\- Direct candidate selection
+- Direct candidate selection
 
-\- Red original clues and black user entries
+- Red original clues and black user entries
 
 
 
-\### 16×16 Hexadecimal Sudoku
+### 16×16 Hexadecimal Sudoku
 
 
 
@@ -118,15 +118,15 @@ Each cell uses one large control rather than sixteen tiny candidate buttons:
 
 
 
-\- Candidates are painted directly in a 4×4 layout
+- Candidates are painted directly in a 4×4 layout
 
-\- Clicking a cell opens the hexadecimal value picker
+- Clicking a cell opens the hexadecimal value picker
 
-\- Values are displayed using `0–9` and `A–F`
+- Values are displayed using `0–9` and `A–F`
 
-\- Right-clicking a filled cell toggles its Original/User colour
+- Right-clicking a filled cell toggles its Original/User colour
 
-\- Candidate availability is calculated directly from the Sudoku engine
+- Candidate availability is calculated directly from the Sudoku engine
 
 
 
@@ -134,7 +134,7 @@ This avoids the impractical alternative of creating 4096 tiny candidate controls
 
 
 
-\## Editing Behaviour
+## Editing Behaviour
 
 
 
@@ -142,11 +142,11 @@ Filled cells are tracked using three separate pieces of information:
 
 
 
-\- `matrix\[]\[]` stores the value
+- `matrix\[]\[]` stores the value
 
-\- `known\[]\[]` identifies cells fixed before solving
+- `known\[]\[]` identifies cells fixed before solving
 
-\- `orig\[]\[]` controls whether a value is displayed as an original clue or a user entry
+- `orig\[]\[]` controls whether a value is displayed as an original clue or a user entry
 
 
 
@@ -162,23 +162,23 @@ When a completed puzzle is saved and reloaded, all loaded values become fixed en
 
 
 
-\## Planned Improvements
+## Planned Improvements
 
 
 
-\- Additional UI polish
+- Additional UI polish
 
-\- Keyboard shortcuts
+- Keyboard shortcuts
 
-\- Continued code cleanup
+- Continued code cleanup
 
-\- Further documentation
+- Further documentation
 
-\- Optional CMake build support
+- Optional CMake build support
 
 
 
-\## Philosophy
+## Philosophy
 
 
 
@@ -194,29 +194,29 @@ The different board presentations are deliberate. Each board size receives the i
 
 
 
-\---
+---
 
 
 
-\## Credits
+## Credits
 
 
 
-\*\*Paul the LionHeart\*\*  
+**Paul the LionHeart**  
 
 Author and Developer
 
 
 
-\*\*ChatGPT\*\*  
+**ChatGPT**  
 
 Workshop Assistant, Reviewer, Teacher, Sounding Board, and Enthusiastic Dragon Spotter
 
 
 
-\---
+---
 
 
 
-> \*"Follow the value, not the symptoms. Every dragon leaves a trail."\*
+> *"Follow the value, not the symptoms. Every dragon leaves a trail."*
 

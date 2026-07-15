@@ -2,7 +2,7 @@
 
 This page provides a quick summary of the most commonly used commands and mouse actions.
 
-For complete explanations, examples and tutorials, see [Sudoku Help](docs/SudokuHelp.md).
+For complete explanations, examples and tutorials, see [Sudoku Help](UserGuide.md).
 
 ---
 

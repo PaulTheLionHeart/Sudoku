@@ -59,10 +59,10 @@ FONT 8, "MS Sans Serif"
 {
     PUSHBUTTON      "OK", IDOK, 74, 94, 83, 14, WS_GROUP | NOT WS_TABSTOP
     CTEXT           "Sudoku Solving Program", IDC_STATIC, 75, 17, 79, 8, SS_CENTER
-    CTEXT           "Copyright © Paul de Leeuw Computers 14/07/2026", IDC_STATIC, 33, 55, 164, 8, SS_CENTER
+    CTEXT           "Copyright © Paul de Leeuw Computers 15/07/2026", IDC_STATIC, 33, 55, 164, 8, SS_CENTER
     CTEXT           "ABN 72 360 922 562", IDC_STATIC, 42, 74, 147, 9, SS_CENTER
     ICON            IDI_ICON2, IDC_STATIC, 22, 9, 21, 20, SS_ICON
-    CTEXT           "Version 1.0", IDC_STATIC, 75, 36, 78, 8, SS_CENTER
+    CTEXT           "Version 1.0a", IDC_STATIC, 75, 36, 40, 8, SS_CENTER
 }
 
 
@@ -124,7 +124,7 @@ FONT 8, "Ms Shell Dlg"
     DEFPUSHBUTTON   "Finish", IDC_FINISH, 334, 420, 50, 14
     DEFPUSHBUTTON   "Save CSV", IDC_SAVE_CSV, 115, 420, 50, 14
     DEFPUSHBUTTON   "Save Sudoku", IDC_SAVESUDOKU, 186, 420, 48, 14
-    DEFPUSHBUTTON   "Calculate", IDC_CALCULATE, 261, 420, 50, 14
+    DEFPUSHBUTTON   "Solve", IDC_CALCULATE, 261, 420, 50, 14
     AUTOCHECKBOX    "Original Puzzle?", IDC_ORIG, 183, 402, 66, 8
     PUSHBUTTON      "", IDC_BUTTON1, 23, 13, 36, 35
     PUSHBUTTON      "1", IDC_BUTTON2, 23, 13, 12, 11
@@ -1283,7 +1283,7 @@ FONT 8, "Ms Shell Dlg"
     PUSHBUTTON      "", IDC_BUTTON254, 387, 408, 28, 26, 0, WS_EX_CLIENTEDGE
     PUSHBUTTON      "", IDC_BUTTON255, 414, 408, 28, 26, 0, WS_EX_CLIENTEDGE
     PUSHBUTTON      "", IDC_BUTTON256, 441, 408, 28, 26, 0, WS_EX_CLIENTEDGE
-    DEFPUSHBUTTON   "Calculate", IDOK, 287, 451, 50, 14
+    DEFPUSHBUTTON   "Solve", IDOK, 287, 451, 50, 14
     DEFPUSHBUTTON   "Refresh", IDC_REFRESH, 69, 451, 50, 14
     DEFPUSHBUTTON   "Finish", IDC_FINISH, 360, 451, 50, 14
     DEFPUSHBUTTON   "Save CSV", IDC_SAVE_CSV, 141, 451, 50, 14

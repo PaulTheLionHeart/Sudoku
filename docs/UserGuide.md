@@ -1,4 +1,4 @@
-# Sudoku Help
+# User Guide
 
 Welcome to Sudoku.
 

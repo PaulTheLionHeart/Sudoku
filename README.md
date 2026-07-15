@@ -29,6 +29,17 @@ Both **9×9** and **16×16 hexadecimal Sudoku** are supported using the same wel
 The project has moved beyond basic modernisation and is now focused on refinement, usability and continued architectural improvements.
 
 
+## Documentation
+
+The complete user manual is supplied with the application.
+
+Quick links:
+
+- 📖 [Sudoku Help](docs/UserGuide.md) – Complete user guide.
+- ⚡ [Quick Reference](docs/QuickReference.md) – Keyboard shortcuts, mouse actions and common tasks.
+
+The documentation explains both the classic 9×9 interface and the modern 16×16 hexadecimal interface, together with the design philosophy behind the project.
+
 
 ## Current Features
 
@@ -159,18 +170,6 @@ Solver-generated values are intentionally not marked as `known`, because the bac
 
 
 When a completed puzzle is saved and reloaded, all loaded values become fixed entries and may then be toggled between Original and User status.
-
-
-## Documentation
-
-The complete user manual is supplied with the application.
-
-Quick links:
-
-- [Quick Reference](docs/QuickReference.md) – Keyboard shortcuts, mouse actions and common tasks.
-- [Sudoku Help](docs/SudokuHelp.md) – Complete user guide covering puzzle creation, solving, saving and editing.
-
-The documentation explains both the classic 9×9 interface and the modern 16×16 hexadecimal interface, together with the design philosophy behind the project.
 
 
 ## Planned Improvements

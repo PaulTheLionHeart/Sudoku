@@ -52,4 +52,4 @@ If an **Impasse** message appears, the current puzzle contains an inconsistency 
 
 # See Also
 
-- [Sudoku Help](SudokuHelp.md)
+- [Sudoku Help](UserGuide.md)

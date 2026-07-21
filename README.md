@@ -14,7 +14,7 @@ The aim of this project is to preserve the original solving engine while careful
 
 **Current Release:** Sudoku 1.1
 
-Sudoku is a native x64 Win32 application supporting both classic **9×9** and **16×16 hexadecimal Sudoku**.
+Sudoku is a native x64 Win32 application supporting both classic **9x9** and **16x16 hexadecimal Sudoku**.
 
 Version 1.1 introduces an integrated puzzle generator together with continued improvements to the architecture, documentation and user interface.
 
@@ -25,11 +25,11 @@ The complete user manual is supplied with the application.
 
 Quick links:
 
-- 📖 [Sudoku Help](docs/UserGuide.md) – Complete user guide.
-- ⚡ [Quick Reference](docs/QuickReference.md) – Keyboard shortcuts and common tasks.
-- 📜 [Revision History](docs/RevisionHistory.md) – Evolution of the project.
+- :book: **Sudoku Help** - Complete user guide.
+- :zap: **Quick Reference** - Keyboard shortcuts and common tasks.
+- :scroll: **Revision History** - Evolution of the project.
 
-The documentation explains both the classic 9×9 interface and the modern 16×16 hexadecimal interface, together with the design philosophy behind the project.
+The documentation explains both the classic 9x9 interface and the modern 16x16 hexadecimal interface, together with the design philosophy behind the project.
 
 
 ## Current Features
@@ -41,7 +41,7 @@ The documentation explains both the classic 9×9 interface and the modern 16×16
 - Modern Win32 callback signatures
 - Legacy Win16 declarations removed
 - Original backtracking Sudoku solver
-- 9×9 and 16×16 puzzle generation
+- 9x9 and 16x16 puzzle generation
 - Interactive candidate display
 - Mouse-based puzzle editing
 - Undo support
@@ -51,7 +51,7 @@ The documentation explains both the classic 9×9 interface and the modern 16×16
 
 ## Sudoku Generator
 
-Version 1.1 adds an integrated Sudoku puzzle generator capable of generating both 9×9 and 16×16 puzzles.
+Version 1.1 adds an integrated Sudoku puzzle generator capable of generating both 9x9 and 16x16 puzzles.
 
 The generator first creates a complete Sudoku grid before removing clues while continually verifying that the puzzle retains a unique solution.
 
@@ -75,7 +75,7 @@ Every generated puzzle is verified to have a unique solution before it is presen
 - Cleaner separation between application logic and board display logic
 - Simplified cell-selection and value-placement workflow
 - Separate rendering paths for 9x9 and 16x16 boards
-- Painted 4×4 hexadecimal candidate display
+- Painted 4x4 hexadecimal candidate display
 - Clickable hexadecimal value picker
 - Integrated Sudoku puzzle generator with unique-solution verification
 - Shared solver and generator architecture using the Minimum Remaining Values (MRV) heuristic
@@ -92,7 +92,7 @@ The two board sizes intentionally use different user interfaces while sharing th
 
 
 
-### 9×9 Sudoku
+### 9x9 Sudoku
 
 
 

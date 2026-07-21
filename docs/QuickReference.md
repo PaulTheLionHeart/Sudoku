@@ -62,7 +62,6 @@ Press **G** or choose **Generate Sudoku**.
 Select:
 
 - Puzzle size
-- Difficulty
 - Symmetry
 
 Press **Generate** to create a new puzzle.

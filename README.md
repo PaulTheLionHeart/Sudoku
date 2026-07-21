@@ -57,8 +57,7 @@ The generator first creates a complete Sudoku grid before removing clues while c
 
 Features include:
 
-- 9×9 and 16×16 puzzle generation
-- Difficulty selection
+- 9x9 and 16x16 puzzle generation
 - Random, Rotational and Mirror symmetry
 - Progress reporting
 - Generation statistics
@@ -75,7 +74,7 @@ Every generated puzzle is verified to have a unique solution before it is presen
 - Board display logic separated into `SudokuDisplay.cpp`
 - Cleaner separation between application logic and board display logic
 - Simplified cell-selection and value-placement workflow
-- Separate rendering paths for 9×9 and 16×16 boards
+- Separate rendering paths for 9x9 and 16x16 boards
 - Painted 4×4 hexadecimal candidate display
 - Clickable hexadecimal value picker
 - Integrated Sudoku puzzle generator with unique-solution verification
@@ -108,7 +107,7 @@ Each cell retains the original interactive design:
 
 
 
-### 16×16 Hexadecimal Sudoku
+### 16x16 Hexadecimal Sudoku
 
 
 
@@ -116,9 +115,9 @@ Each cell uses one large control rather than sixteen tiny candidate buttons:
 
 
 
-- Candidates are painted directly in a 4×4 layout
+- Candidates are painted directly in a 4x4 layout
 - Clicking a cell opens the hexadecimal value picker
-- Values are displayed using `0–9` and `A–F`
+- Values are displayed using `0-9` and `A-F`
 - Right-clicking a filled cell toggles its Original/User colour
 - Candidate availability is calculated directly from the Sudoku engine
 
@@ -151,12 +150,14 @@ Solver-generated values are intentionally not marked as `known`, because the bac
 When a completed puzzle is saved and reloaded, all loaded values become fixed entries and may then be toggled between Original and User status.
 
 
-## Planned Improvements
+## Future Development
 
+Planned enhancements include:
 
-
+- Configurable puzzle difficulty
+- Additional symmetry options
+- Continued optimisation of 16�16 puzzle generation
 - Additional generation options
-- Improved difficulty analysis
 - Continued code cleanup
 - Optional CMake build support
 

@@ -11,16 +11,15 @@ Release date: July 2026
 ### New Features
 
 - Sudoku puzzle generator.
-- Automatic generation of both 9×9 and 16×16 puzzles.
+- Automatic generation of both 9x9 and 16x16 puzzles.
 - Unique-solution verification.
-- Difficulty selection.
 - Puzzle symmetry options:
   - Random
   - Rotational
   - Mirror
 - Generation statistics.
 - Progress reporting during generation.
-- Integrated generator for both classic 9×9 and hexadecimal 16×16 Sudoku.
+- Integrated generator for both classic 9x9 and hexadecimal 16x16 Sudoku.
 
 ### Improvements
 
@@ -36,6 +35,11 @@ Release date: July 2026
 - Shared helper functions.
 - Cleaner separation between generator, solver and display code.
 - Improved comments describing design decisions.
+
+## Looking Ahead
+
+Future versions are expected to expand the puzzle generator with configurable
+difficulty levels and additional symmetry options.
 
 ---
 

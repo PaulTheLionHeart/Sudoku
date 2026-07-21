@@ -126,7 +126,7 @@ Create a new blank puzzle.
 
 Creates a new Sudoku puzzle automatically.
 
-The generator allows you to choose the puzzle size, difficulty and symmetry before generation begins.
+The generator allows you to choose the puzzle size and symmetry before generation begins.
 
 ## Original Puzzle
 
@@ -230,7 +230,6 @@ Press **G** or choose **Generate Sudoku** from the menu.
 The Generate dialog allows you to choose:
 
 - Puzzle size
-- Difficulty
 - Symmetry
 
 Available symmetry options are:

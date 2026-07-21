@@ -1,0 +1,4828 @@
+LionHeart Sudoku Generator Benchmark
+
+These benchmark logs are retained as historical reference data.
+
+They provide baseline performance measurements for future optimisation of the Sudoku generator.
+
+They are not intended to represent the final performance of the algorithm.
+
+Benchmark 001
+
+Puzzle type : Hex (16×16)
+Generator   : Exhaustive
+Search      : Unlimited
+Compiler    : VS2017 x64 Release
+
+Purpose:
+Baseline benchmark for future generator optimisations.
+
+GeneratePuzzle(): begin
+Maximum filled = 1
+Maximum filled = 2
+Maximum filled = 3
+Maximum filled = 4
+Maximum filled = 5
+Maximum filled = 6
+Maximum filled = 7
+Maximum filled = 8
+Maximum filled = 9
+Maximum filled = 10
+Maximum filled = 11
+Maximum filled = 12
+Maximum filled = 13
+Maximum filled = 14
+Maximum filled = 15
+Maximum filled = 16
+Maximum filled = 17
+Maximum filled = 18
+Maximum filled = 19
+Maximum filled = 20
+Maximum filled = 21
+Maximum filled = 22
+Maximum filled = 23
+Maximum filled = 24
+Maximum filled = 25
+Maximum filled = 26
+Maximum filled = 27
+Maximum filled = 28
+Maximum filled = 29
+Maximum filled = 30
+Maximum filled = 31
+Maximum filled = 32
+Maximum filled = 33
+Maximum filled = 34
+Maximum filled = 35
+Maximum filled = 36
+Maximum filled = 37
+Maximum filled = 38
+Maximum filled = 39
+Maximum filled = 40
+Maximum filled = 41
+Maximum filled = 42
+Maximum filled = 43
+Maximum filled = 44
+Maximum filled = 45
+Maximum filled = 46
+Maximum filled = 47
+Maximum filled = 48
+Maximum filled = 49
+Maximum filled = 50
+Maximum filled = 51
+Maximum filled = 52
+Maximum filled = 53
+Maximum filled = 54
+Maximum filled = 55
+Maximum filled = 56
+Maximum filled = 57
+Maximum filled = 58
+Maximum filled = 59
+Maximum filled = 60
+Maximum filled = 61
+Maximum filled = 62
+Maximum filled = 63
+Maximum filled = 64
+Maximum filled = 65
+Maximum filled = 66
+Maximum filled = 67
+Maximum filled = 68
+Maximum filled = 69
+Maximum filled = 70
+Maximum filled = 71
+Maximum filled = 72
+Maximum filled = 73
+Maximum filled = 74
+Maximum filled = 75
+Maximum filled = 76
+Maximum filled = 77
+Maximum filled = 78
+Maximum filled = 79
+Maximum filled = 80
+Maximum filled = 81
+Maximum filled = 82
+Maximum filled = 83
+Maximum filled = 84
+Maximum filled = 85
+Maximum filled = 86
+Maximum filled = 87
+Maximum filled = 88
+Maximum filled = 89
+Maximum filled = 90
+Maximum filled = 91
+Maximum filled = 92
+Maximum filled = 93
+Maximum filled = 94
+Maximum filled = 95
+Maximum filled = 96
+Maximum filled = 97
+Maximum filled = 98
+Maximum filled = 99
+Maximum filled = 100
+Maximum filled = 101
+Maximum filled = 102
+Maximum filled = 103
+Maximum filled = 104
+Maximum filled = 105
+Maximum filled = 106
+Maximum filled = 107
+Maximum filled = 108
+Maximum filled = 109
+Maximum filled = 110
+Maximum filled = 111
+Maximum filled = 112
+Maximum filled = 113
+Maximum filled = 114
+Maximum filled = 115
+Maximum filled = 116
+Maximum filled = 117
+Maximum filled = 118
+Maximum filled = 119
+Maximum filled = 120
+Maximum filled = 121
+Maximum filled = 122
+Maximum filled = 123
+Maximum filled = 124
+Maximum filled = 125
+Maximum filled = 126
+Maximum filled = 127
+Maximum filled = 128
+Maximum filled = 129
+Maximum filled = 130
+Maximum filled = 131
+Maximum filled = 132
+Maximum filled = 133
+Maximum filled = 134
+Maximum filled = 135
+Maximum filled = 136
+Maximum filled = 137
+Maximum filled = 138
+Maximum filled = 139
+Maximum filled = 140
+Maximum filled = 141
+Maximum filled = 142
+Maximum filled = 143
+Maximum filled = 144
+Maximum filled = 145
+Maximum filled = 146
+Maximum filled = 147
+Maximum filled = 148
+Maximum filled = 149
+Maximum filled = 150
+Maximum filled = 151
+Maximum filled = 152
+Maximum filled = 153
+Maximum filled = 154
+Maximum filled = 155
+Maximum filled = 156
+Maximum filled = 157
+Maximum filled = 158
+Maximum filled = 159
+Maximum filled = 160
+Maximum filled = 161
+Maximum filled = 162
+Maximum filled = 163
+Maximum filled = 164
+Maximum filled = 165
+Maximum filled = 166
+Maximum filled = 167
+Maximum filled = 168
+Maximum filled = 169
+Maximum filled = 170
+Maximum filled = 171
+Maximum filled = 172
+Maximum filled = 173
+Maximum filled = 174
+Maximum filled = 175
+Maximum filled = 176
+Maximum filled = 177
+Maximum filled = 178
+Maximum filled = 179
+Maximum filled = 180
+Maximum filled = 181
+Maximum filled = 182
+Maximum filled = 183
+Maximum filled = 184
+Maximum filled = 185
+Maximum filled = 186
+Maximum filled = 187
+Maximum filled = 188
+Maximum filled = 189
+Maximum filled = 190
+Maximum filled = 191
+Maximum filled = 192
+Maximum filled = 193
+Maximum filled = 194
+Maximum filled = 195
+Maximum filled = 196
+Maximum filled = 197
+Maximum filled = 198
+Maximum filled = 199
+Maximum filled = 200
+Maximum filled = 201
+Maximum filled = 202
+Maximum filled = 203
+Maximum filled = 204
+Maximum filled = 205
+Maximum filled = 206
+Maximum filled = 207
+Maximum filled = 208
+Maximum filled = 209
+Maximum filled = 210
+Maximum filled = 211
+Maximum filled = 212
+Maximum filled = 213
+Maximum filled = 214
+Maximum filled = 215
+Maximum filled = 216
+Maximum filled = 217
+Maximum filled = 218
+Maximum filled = 219
+Maximum filled = 220
+Maximum filled = 221
+Maximum filled = 222
+Maximum filled = 223
+Maximum filled = 224
+Maximum filled = 225
+Maximum filled = 226
+Maximum filled = 227
+Maximum filled = 228
+Maximum filled = 229
+Maximum filled = 230
+Maximum filled = 231
+Maximum filled = 232
+Maximum filled = 233
+Maximum filled = 234
+Maximum filled = 235
+Maximum filled = 236
+Maximum filled = 237
+Maximum filled = 238
+Maximum filled = 239
+Maximum filled = 240
+Maximum filled = 241
+Maximum filled = 242
+Maximum filled = 243
+Maximum filled = 244
+Maximum filled = 245
+Maximum filled = 246
+Maximum filled = 247
+Maximum filled = 248
+Maximum filled = 249
+Maximum filled = 250
+Maximum filled = 251
+Maximum filled = 252
+Maximum filled = 253
+Maximum filled = 254
+Maximum filled = 255
+GeneratePuzzle(): complete grid generated
+GeneratePuzzle(): uniqueness verified!
+First cell = 53
+Trying clue 1 of 256 at (3,5)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 1
+    Accepted
+Trying clue 2 of 256 at (4,6)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 2
+    Accepted
+Trying clue 3 of 256 at (9,3)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 3
+    Accepted
+Trying clue 4 of 256 at (1,3)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 4
+    Accepted
+Trying clue 5 of 256 at (8,10)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 5
+    Accepted
+Trying clue 6 of 256 at (4,11)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 6
+    Accepted
+Trying clue 7 of 256 at (2,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 7
+    Accepted
+Trying clue 8 of 256 at (7,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 8
+    Accepted
+Trying clue 9 of 256 at (4,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 9
+    Accepted
+Trying clue 10 of 256 at (10,6)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 10
+    Accepted
+Trying clue 11 of 256 at (4,12)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 11
+    Accepted
+Trying clue 12 of 256 at (2,11)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 12
+    Accepted
+Trying clue 13 of 256 at (6,5)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 13
+    Accepted
+Trying clue 14 of 256 at (4,15)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 14
+    Accepted
+Trying clue 15 of 256 at (3,2)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 15
+    Accepted
+Trying clue 16 of 256 at (7,3)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 16
+    Accepted
+Trying clue 17 of 256 at (3,3)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 17
+    Accepted
+Trying clue 18 of 256 at (5,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 18
+    Accepted
+Trying clue 19 of 256 at (11,10)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 19
+    Accepted
+Trying clue 20 of 256 at (6,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 20
+    Accepted
+Trying clue 21 of 256 at (8,2)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 21
+    Accepted
+Trying clue 22 of 256 at (8,13)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 22
+    Accepted
+Trying clue 23 of 256 at (10,2)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 23
+    Accepted
+Trying clue 24 of 256 at (12,9)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 24
+    Accepted
+Trying clue 25 of 256 at (10,12)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 25
+    Accepted
+Trying clue 26 of 256 at (14,8)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 26
+    Accepted
+Trying clue 27 of 256 at (0,11)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 27
+    Accepted
+Trying clue 28 of 256 at (8,11)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 28
+    Accepted
+Trying clue 29 of 256 at (13,7)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 29
+    Accepted
+Trying clue 30 of 256 at (15,13)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 30
+    Accepted
+Trying clue 31 of 256 at (1,10)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 31
+    Accepted
+Trying clue 32 of 256 at (14,13)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 32
+    Accepted
+Trying clue 33 of 256 at (1,14)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 33
+    Accepted
+Trying clue 34 of 256 at (2,6)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 34
+    Accepted
+Trying clue 35 of 256 at (0,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 35
+    Accepted
+Trying clue 36 of 256 at (7,9)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 36
+    Accepted
+Trying clue 37 of 256 at (11,7)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 37
+    Accepted
+Trying clue 38 of 256 at (1,5)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 38
+    Accepted
+Trying clue 39 of 256 at (4,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 39
+    Accepted
+Trying clue 40 of 256 at (4,10)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 40
+    Accepted
+Trying clue 41 of 256 at (11,12)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 41
+    Accepted
+Trying clue 42 of 256 at (1,15)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 42
+    Accepted
+Trying clue 43 of 256 at (13,3)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 43
+    Accepted
+Trying clue 44 of 256 at (5,9)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 44
+    Accepted
+Trying clue 45 of 256 at (7,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 45
+    Accepted
+Trying clue 46 of 256 at (14,5)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 46
+    Accepted
+Trying clue 47 of 256 at (8,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 47
+    Accepted
+Trying clue 48 of 256 at (6,9)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 48
+    Accepted
+Trying clue 49 of 256 at (7,15)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 49
+    Accepted
+Trying clue 50 of 256 at (2,9)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 50
+    Accepted
+Trying clue 51 of 256 at (6,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 51
+    Accepted
+Trying clue 52 of 256 at (3,15)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 52
+    Accepted
+Trying clue 53 of 256 at (9,8)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 53
+    Accepted
+Trying clue 54 of 256 at (13,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 54
+    Accepted
+Trying clue 55 of 256 at (13,11)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 55
+    Accepted
+Trying clue 56 of 256 at (0,15)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 56
+    Accepted
+Trying clue 57 of 256 at (13,5)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 57
+    Accepted
+Trying clue 58 of 256 at (2,15)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 58
+    Accepted
+Trying clue 59 of 256 at (12,11)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 59
+    Accepted
+Trying clue 60 of 256 at (15,8)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 60
+    Accepted
+Trying clue 61 of 256 at (1,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 61
+    Accepted
+Trying clue 62 of 256 at (8,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 62
+    Accepted
+Trying clue 63 of 256 at (10,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 63
+    Accepted
+Trying clue 64 of 256 at (15,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 64
+    Accepted
+Trying clue 65 of 256 at (1,11)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 65
+    Accepted
+Trying clue 66 of 256 at (11,2)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 66
+    Accepted
+Trying clue 67 of 256 at (15,12)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 67
+    Accepted
+Trying clue 68 of 256 at (6,12)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 68
+    Accepted
+Trying clue 69 of 256 at (14,9)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 69
+    Accepted
+Trying clue 70 of 256 at (6,14)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 70
+    Accepted
+Trying clue 71 of 256 at (14,10)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 71
+    Accepted
+Trying clue 72 of 256 at (7,11)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 72
+    Accepted
+Trying clue 73 of 256 at (11,13)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 73
+    Accepted
+Trying clue 74 of 256 at (7,8)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 74
+    Accepted
+Trying clue 75 of 256 at (13,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 75
+    Accepted
+Trying clue 76 of 256 at (15,14)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 76
+    Accepted
+Trying clue 77 of 256 at (5,3)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 77
+    Accepted
+Trying clue 78 of 256 at (9,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 78
+    Accepted
+Trying clue 79 of 256 at (12,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 79
+    Accepted
+Trying clue 80 of 256 at (15,9)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 80
+    Accepted
+Trying clue 81 of 256 at (2,14)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 81
+    Accepted
+Trying clue 82 of 256 at (10,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 82
+    Accepted
+Trying clue 83 of 256 at (15,7)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 83
+    Accepted
+Trying clue 84 of 256 at (5,2)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 84
+    Accepted
+Trying clue 85 of 256 at (7,12)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 85
+    Accepted
+Trying clue 86 of 256 at (14,15)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 86
+    Accepted
+Trying clue 87 of 256 at (14,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 87
+    Accepted
+Trying clue 88 of 256 at (15,3)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 88
+    Accepted
+Trying clue 89 of 256 at (14,12)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 89
+    Accepted
+Trying clue 90 of 256 at (9,14)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 90
+    Accepted
+Trying clue 91 of 256 at (14,2)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 91
+    Accepted
+Trying clue 92 of 256 at (14,14)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 92
+    Accepted
+Trying clue 93 of 256 at (11,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 93
+    Accepted
+Trying clue 94 of 256 at (5,15)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 94
+    Accepted
+Trying clue 95 of 256 at (9,11)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 95
+    Accepted
+Trying clue 96 of 256 at (5,8)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 96
+    Accepted
+Trying clue 97 of 256 at (11,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 97
+    Accepted
+Trying clue 98 of 256 at (9,15)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 98
+    Accepted
+Trying clue 99 of 256 at (1,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 99
+    Accepted
+Trying clue 100 of 256 at (12,10)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 100
+    Accepted
+Trying clue 101 of 256 at (13,10)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 101
+    Accepted
+Trying clue 102 of 256 at (12,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 102
+    Accepted
+Trying clue 103 of 256 at (5,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 103
+    Accepted
+Trying clue 104 of 256 at (13,2)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 104
+    Accepted
+Trying clue 105 of 256 at (6,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 105
+    Accepted
+Trying clue 106 of 256 at (10,10)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 113
+    Rejected
+Trying clue 107 of 256 at (4,7)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 106
+    Accepted
+Trying clue 108 of 256 at (0,13)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 107
+    Accepted
+Trying clue 109 of 256 at (3,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 108
+    Accepted
+Trying clue 110 of 256 at (0,7)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 109
+    Accepted
+Trying clue 111 of 256 at (10,14)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 110
+    Accepted
+Trying clue 112 of 256 at (10,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 111
+    Accepted
+Trying clue 113 of 256 at (9,6)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 112
+    Accepted
+Trying clue 114 of 256 at (4,13)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 113
+    Accepted
+Trying clue 115 of 256 at (0,0)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 114
+    Accepted
+Trying clue 116 of 256 at (15,6)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 115
+    Accepted
+Trying clue 117 of 256 at (9,5)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 116
+    Accepted
+Trying clue 118 of 256 at (0,5)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 117
+    Accepted
+Trying clue 119 of 256 at (15,15)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 118
+    Accepted
+Trying clue 120 of 256 at (10,9)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 119
+    Accepted
+Trying clue 121 of 256 at (5,14)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 120
+    Accepted
+Trying clue 122 of 256 at (9,13)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 121
+    Accepted
+Trying clue 123 of 256 at (1,13)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 126
+    Accepted
+Trying clue 124 of 256 at (6,2)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 127
+    Accepted
+Trying clue 125 of 256 at (3,8)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 190
+    Accepted
+Trying clue 126 of 256 at (12,13)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 192
+    Accepted
+Trying clue 127 of 256 at (15,2)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 372
+    Accepted
+Trying clue 128 of 256 at (15,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 373
+    Accepted
+Trying clue 129 of 256 at (7,6)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 400
+    Accepted
+Trying clue 130 of 256 at (15,1)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 401
+    Accepted
+Trying clue 131 of 256 at (3,9)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 412
+    Accepted
+Trying clue 132 of 256 at (3,12)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 420
+    Accepted
+Trying clue 133 of 256 at (14,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 425
+    Accepted
+Trying clue 134 of 256 at (12,5)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 427
+    Accepted
+Trying clue 135 of 256 at (8,12)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 444
+    Accepted
+Trying clue 136 of 256 at (9,9)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 1025
+    Accepted
+Trying clue 137 of 256 at (14,3)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 1026
+    Accepted
+Trying clue 138 of 256 at (0,6)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 1036
+    Accepted
+Trying clue 139 of 256 at (7,2)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 181
+    Rejected
+Trying clue 140 of 256 at (14,6)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 1307
+    Rejected
+Trying clue 141 of 256 at (4,3)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 3635
+    Accepted
+Trying clue 142 of 256 at (8,5)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 6451
+    Accepted
+Trying clue 143 of 256 at (3,4)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 19621
+    Accepted
+Trying clue 144 of 256 at (7,13)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 19070
+    Rejected
+Trying clue 145 of 256 at (9,7)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 19622
+    Accepted
+Trying clue 146 of 256 at (2,7)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 39022
+    Accepted
+Trying clue 147 of 256 at (7,5)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 64497
+    Accepted
+Trying clue 148 of 256 at (8,8)    (0 seconds)
+    Checking uniqueness...
+    Nodes this clue = 407206
+    Accepted
+Trying clue 149 of 256 at (11,11)    (0 seconds)
+    Checking uniqueness...
+Visited 1 million nodes
+Visited 2 million nodes
+Visited 3 million nodes
+    Nodes this clue = 3192279
+    Accepted
+Trying clue 150 of 256 at (5,6)    (3 seconds)
+    Checking uniqueness...
+Visited 4 million nodes
+Visited 5 million nodes
+Visited 6 million nodes
+Visited 7 million nodes
+Visited 8 million nodes
+Visited 9 million nodes
+Visited 10 million nodes
+    Nodes this clue = 6875866
+    Accepted
+Trying clue 151 of 256 at (1,2)    (9 seconds)
+    Checking uniqueness...
+Visited 11 million nodes
+Visited 12 million nodes
+Visited 13 million nodes
+Visited 14 million nodes
+Visited 15 million nodes
+Visited 16 million nodes
+Visited 17 million nodes
+Visited 18 million nodes
+Visited 19 million nodes
+    Nodes this clue = 9186603
+    Accepted
+Trying clue 152 of 256 at (1,12)    (18 seconds)
+    Checking uniqueness...
+    Nodes this clue = 15009
+    Rejected
+Trying clue 153 of 256 at (6,6)    (18 seconds)
+    Checking uniqueness...
+Visited 20 million nodes
+    Nodes this clue = 242763
+    Rejected
+Trying clue 154 of 256 at (2,8)    (18 seconds)
+    Checking uniqueness...
+Visited 21 million nodes
+Visited 22 million nodes
+Visited 23 million nodes
+Visited 24 million nodes
+Visited 25 million nodes
+Visited 26 million nodes
+Visited 27 million nodes
+Visited 28 million nodes
+Visited 29 million nodes
+Visited 30 million nodes
+Visited 31 million nodes
+Visited 32 million nodes
+Visited 33 million nodes
+    Nodes this clue = 13455099
+    Accepted
+Trying clue 155 of 256 at (15,11)    (31 seconds)
+    Checking uniqueness...
+    Nodes this clue = 101428
+    Rejected
+Trying clue 156 of 256 at (8,9)    (31 seconds)
+    Checking uniqueness...
+    Nodes this clue = 332135
+    Rejected
+Trying clue 157 of 256 at (6,10)    (31 seconds)
+    Checking uniqueness...
+Visited 34 million nodes
+    Nodes this clue = 657694
+    Rejected
+Trying clue 158 of 256 at (11,15)    (32 seconds)
+    Checking uniqueness...
+Visited 35 million nodes
+    Nodes this clue = 529082
+    Rejected
+Trying clue 159 of 256 at (4,2)    (32 seconds)
+    Checking uniqueness...
+    Nodes this clue = 715241
+    Rejected
+Trying clue 160 of 256 at (7,14)    (33 seconds)
+    Checking uniqueness...
+    Nodes this clue = 20780
+    Rejected
+Trying clue 161 of 256 at (4,14)    (33 seconds)
+    Checking uniqueness...
+Visited 36 million nodes
+Visited 37 million nodes
+Visited 38 million nodes
+Visited 39 million nodes
+Visited 40 million nodes
+Visited 41 million nodes
+Visited 42 million nodes
+    Nodes this clue = 6476405
+    Rejected
+Trying clue 162 of 256 at (0,4)    (40 seconds)
+    Checking uniqueness...
+Visited 43 million nodes
+Visited 44 million nodes
+Visited 45 million nodes
+Visited 46 million nodes
+Visited 47 million nodes
+Visited 48 million nodes
+Visited 49 million nodes
+Visited 50 million nodes
+Visited 51 million nodes
+Visited 52 million nodes
+Visited 53 million nodes
+Visited 54 million nodes
+    Nodes this clue = 11852836
+    Rejected
+Trying clue 163 of 256 at (9,0)    (52 seconds)
+    Checking uniqueness...
+Visited 55 million nodes
+Visited 56 million nodes
+Visited 57 million nodes
+Visited 58 million nodes
+Visited 59 million nodes
+Visited 60 million nodes
+Visited 61 million nodes
+Visited 62 million nodes
+Visited 63 million nodes
+Visited 64 million nodes
+Visited 65 million nodes
+Visited 66 million nodes
+    Nodes this clue = 12695923
+    Rejected
+Trying clue 164 of 256 at (10,15)    (66 seconds)
+    Checking uniqueness...
+Visited 67 million nodes
+Visited 68 million nodes
+Visited 69 million nodes
+Visited 70 million nodes
+Visited 71 million nodes
+Visited 72 million nodes
+Visited 73 million nodes
+Visited 74 million nodes
+Visited 75 million nodes
+Visited 76 million nodes
+Visited 77 million nodes
+Visited 78 million nodes
+Visited 79 million nodes
+Visited 80 million nodes
+    Nodes this clue = 13241387
+    Rejected
+Trying clue 165 of 256 at (2,13)    (79 seconds)
+    Checking uniqueness...
+Visited 81 million nodes
+Visited 82 million nodes
+Visited 83 million nodes
+Visited 84 million nodes
+Visited 85 million nodes
+Visited 86 million nodes
+Visited 87 million nodes
+Visited 88 million nodes
+Visited 89 million nodes
+Visited 90 million nodes
+    Nodes this clue = 10038931
+    Rejected
+Trying clue 166 of 256 at (1,6)    (88 seconds)
+    Checking uniqueness...
+Visited 91 million nodes
+Visited 92 million nodes
+Visited 93 million nodes
+Visited 94 million nodes
+Visited 95 million nodes
+Visited 96 million nodes
+Visited 97 million nodes
+Visited 98 million nodes
+Visited 99 million nodes
+Visited 100 million nodes
+Visited 101 million nodes
+Visited 102 million nodes
+Visited 103 million nodes
+Visited 104 million nodes
+Visited 105 million nodes
+Visited 106 million nodes
+Visited 107 million nodes
+Visited 108 million nodes
+Visited 109 million nodes
+Visited 110 million nodes
+Visited 111 million nodes
+Visited 112 million nodes
+Visited 113 million nodes
+Visited 114 million nodes
+Visited 115 million nodes
+Visited 116 million nodes
+Visited 117 million nodes
+Visited 118 million nodes
+Visited 119 million nodes
+Visited 120 million nodes
+Visited 121 million nodes
+Visited 122 million nodes
+Visited 123 million nodes
+Visited 124 million nodes
+Visited 125 million nodes
+Visited 126 million nodes
+    Nodes this clue = 35884371
+    Rejected
+Trying clue 167 of 256 at (0,9)    (123 seconds)
+    Checking uniqueness...
+Visited 127 million nodes
+    Nodes this clue = 913055
+    Rejected
+Trying clue 168 of 256 at (3,6)    (124 seconds)
+    Checking uniqueness...
+Visited 128 million nodes
+Visited 129 million nodes
+Visited 130 million nodes
+Visited 131 million nodes
+Visited 132 million nodes
+Visited 133 million nodes
+Visited 134 million nodes
+Visited 135 million nodes
+Visited 136 million nodes
+Visited 137 million nodes
+Visited 138 million nodes
+Visited 139 million nodes
+Visited 140 million nodes
+    Nodes this clue = 13114624
+    Accepted
+Trying clue 169 of 256 at (0,14)    (138 seconds)
+    Checking uniqueness...
+Visited 141 million nodes
+Visited 142 million nodes
+Visited 143 million nodes
+Visited 144 million nodes
+Visited 145 million nodes
+Visited 146 million nodes
+Visited 147 million nodes
+Visited 148 million nodes
+Visited 149 million nodes
+Visited 150 million nodes
+Visited 151 million nodes
+Visited 152 million nodes
+Visited 153 million nodes
+Visited 154 million nodes
+Visited 155 million nodes
+Visited 156 million nodes
+    Nodes this clue = 16278920
+    Accepted
+Trying clue 170 of 256 at (10,3)    (154 seconds)
+    Checking uniqueness...
+Visited 157 million nodes
+Visited 158 million nodes
+Visited 159 million nodes
+Visited 160 million nodes
+Visited 161 million nodes
+Visited 162 million nodes
+Visited 163 million nodes
+Visited 164 million nodes
+Visited 165 million nodes
+Visited 166 million nodes
+Visited 167 million nodes
+Visited 168 million nodes
+Visited 169 million nodes
+Visited 170 million nodes
+Visited 171 million nodes
+Visited 172 million nodes
+Visited 173 million nodes
+Visited 174 million nodes
+Visited 175 million nodes
+    Nodes this clue = 18647273
+    Rejected
+Trying clue 171 of 256 at (2,0)    (172 seconds)
+    Checking uniqueness...
+Visited 176 million nodes
+Visited 177 million nodes
+Visited 178 million nodes
+Visited 179 million nodes
+Visited 180 million nodes
+Visited 181 million nodes
+Visited 182 million nodes
+Visited 183 million nodes
+Visited 184 million nodes
+Visited 185 million nodes
+Visited 186 million nodes
+Visited 187 million nodes
+Visited 188 million nodes
+Visited 189 million nodes
+Visited 190 million nodes
+Visited 191 million nodes
+Visited 192 million nodes
+Visited 193 million nodes
+Visited 194 million nodes
+Visited 195 million nodes
+Visited 196 million nodes
+Visited 197 million nodes
+    Nodes this clue = 22526462
+    Accepted
+Trying clue 172 of 256 at (9,10)    (195 seconds)
+    Checking uniqueness...
+Visited 198 million nodes
+Visited 199 million nodes
+Visited 200 million nodes
+Visited 201 million nodes
+    Nodes this clue = 3593625
+    Rejected
+Trying clue 173 of 256 at (12,7)    (198 seconds)
+    Checking uniqueness...
+Visited 202 million nodes
+Visited 203 million nodes
+Visited 204 million nodes
+Visited 205 million nodes
+Visited 206 million nodes
+Visited 207 million nodes
+Visited 208 million nodes
+Visited 209 million nodes
+Visited 210 million nodes
+Visited 211 million nodes
+Visited 212 million nodes
+Visited 213 million nodes
+Visited 214 million nodes
+Visited 215 million nodes
+Visited 216 million nodes
+Visited 217 million nodes
+Visited 218 million nodes
+Visited 219 million nodes
+Visited 220 million nodes
+Visited 221 million nodes
+Visited 222 million nodes
+Visited 223 million nodes
+Visited 224 million nodes
+Visited 225 million nodes
+Visited 226 million nodes
+Visited 227 million nodes
+Visited 228 million nodes
+Visited 229 million nodes
+Visited 230 million nodes
+Visited 231 million nodes
+Visited 232 million nodes
+Visited 233 million nodes
+Visited 234 million nodes
+    Nodes this clue = 33092795
+    Accepted
+Trying clue 174 of 256 at (13,4)    (234 seconds)
+    Checking uniqueness...
+Visited 235 million nodes
+Visited 236 million nodes
+    Nodes this clue = 1868797
+    Rejected
+Trying clue 175 of 256 at (3,7)    (236 seconds)
+    Checking uniqueness...
+Visited 237 million nodes
+Visited 238 million nodes
+Visited 239 million nodes
+Visited 240 million nodes
+    Nodes this clue = 4136030
+    Rejected
+Trying clue 176 of 256 at (3,14)    (240 seconds)
+    Checking uniqueness...
+Visited 241 million nodes
+Visited 242 million nodes
+Visited 243 million nodes
+Visited 244 million nodes
+Visited 245 million nodes
+Visited 246 million nodes
+    Nodes this clue = 6161983
+    Rejected
+Trying clue 177 of 256 at (5,11)    (247 seconds)
+    Checking uniqueness...
+Visited 247 million nodes
+Visited 248 million nodes
+    Nodes this clue = 2179040
+    Rejected
+Trying clue 178 of 256 at (5,5)    (249 seconds)
+    Checking uniqueness...
+Visited 249 million nodes
+Visited 250 million nodes
+Visited 251 million nodes
+    Nodes this clue = 2597855
+    Rejected
+Trying clue 179 of 256 at (12,8)    (252 seconds)
+    Checking uniqueness...
+Visited 252 million nodes
+    Nodes this clue = 1576941
+    Rejected
+Trying clue 180 of 256 at (11,14)    (253 seconds)
+    Checking uniqueness...
+Visited 253 million nodes
+    Nodes this clue = 1043493
+    Rejected
+Trying clue 181 of 256 at (2,1)    (255 seconds)
+    Checking uniqueness...
+Visited 254 million nodes
+Visited 255 million nodes
+Visited 256 million nodes
+Visited 257 million nodes
+Visited 258 million nodes
+Visited 259 million nodes
+Visited 260 million nodes
+Visited 261 million nodes
+Visited 262 million nodes
+Visited 263 million nodes
+Visited 264 million nodes
+Visited 265 million nodes
+Visited 266 million nodes
+Visited 267 million nodes
+Visited 268 million nodes
+Visited 269 million nodes
+Visited 270 million nodes
+Visited 271 million nodes
+Visited 272 million nodes
+Visited 273 million nodes
+Visited 274 million nodes
+Visited 275 million nodes
+Visited 276 million nodes
+Visited 277 million nodes
+Visited 278 million nodes
+Visited 279 million nodes
+Visited 280 million nodes
+Visited 281 million nodes
+Visited 282 million nodes
+Visited 283 million nodes
+Visited 284 million nodes
+Visited 285 million nodes
+    Nodes this clue = 31611034
+    Rejected
+Trying clue 182 of 256 at (11,9)    (284 seconds)
+    Checking uniqueness...
+Visited 286 million nodes
+Visited 287 million nodes
+Visited 288 million nodes
+Visited 289 million nodes
+Visited 290 million nodes
+Visited 291 million nodes
+Visited 292 million nodes
+Visited 293 million nodes
+Visited 294 million nodes
+Visited 295 million nodes
+Visited 296 million nodes
+Visited 297 million nodes
+Visited 298 million nodes
+Visited 299 million nodes
+Visited 300 million nodes
+Visited 301 million nodes
+Visited 302 million nodes
+Visited 303 million nodes
+Visited 304 million nodes
+Visited 305 million nodes
+Visited 306 million nodes
+Visited 307 million nodes
+Visited 308 million nodes
+Visited 309 million nodes
+Visited 310 million nodes
+Visited 311 million nodes
+Visited 312 million nodes
+Visited 313 million nodes
+Visited 314 million nodes
+Visited 315 million nodes
+Visited 316 million nodes
+Visited 317 million nodes
+Visited 318 million nodes
+Visited 319 million nodes
+Visited 320 million nodes
+    Nodes this clue = 35308444
+    Accepted
+Trying clue 183 of 256 at (10,11)    (321 seconds)
+    Checking uniqueness...
+Visited 321 million nodes
+Visited 322 million nodes
+Visited 323 million nodes
+Visited 324 million nodes
+Visited 325 million nodes
+    Nodes this clue = 4518819
+    Rejected
+Trying clue 184 of 256 at (1,9)    (326 seconds)
+    Checking uniqueness...
+Visited 326 million nodes
+Visited 327 million nodes
+Visited 328 million nodes
+Visited 329 million nodes
+Visited 330 million nodes
+Visited 331 million nodes
+Visited 332 million nodes
+Visited 333 million nodes
+Visited 334 million nodes
+Visited 335 million nodes
+Visited 336 million nodes
+Visited 337 million nodes
+Visited 338 million nodes
+Visited 339 million nodes
+Visited 340 million nodes
+Visited 341 million nodes
+Visited 342 million nodes
+Visited 343 million nodes
+Visited 344 million nodes
+Visited 345 million nodes
+Visited 346 million nodes
+Visited 347 million nodes
+Visited 348 million nodes
+Visited 349 million nodes
+Visited 350 million nodes
+Visited 351 million nodes
+Visited 352 million nodes
+Visited 353 million nodes
+Visited 354 million nodes
+Visited 355 million nodes
+Visited 356 million nodes
+Visited 357 million nodes
+Visited 358 million nodes
+Visited 359 million nodes
+Visited 360 million nodes
+    Nodes this clue = 35223183
+    Accepted
+Trying clue 185 of 256 at (0,10)    (363 seconds)
+    Checking uniqueness...
+Visited 361 million nodes
+Visited 362 million nodes
+    Nodes this clue = 1712488
+    Rejected
+Trying clue 186 of 256 at (0,12)    (365 seconds)
+    Checking uniqueness...
+Visited 363 million nodes
+Visited 364 million nodes
+Visited 365 million nodes
+Visited 366 million nodes
+Visited 367 million nodes
+Visited 368 million nodes
+Visited 369 million nodes
+Visited 370 million nodes
+Visited 371 million nodes
+Visited 372 million nodes
+Visited 373 million nodes
+Visited 374 million nodes
+Visited 375 million nodes
+Visited 376 million nodes
+Visited 377 million nodes
+Visited 378 million nodes
+Visited 379 million nodes
+Visited 380 million nodes
+Visited 381 million nodes
+Visited 382 million nodes
+Visited 383 million nodes
+Visited 384 million nodes
+Visited 385 million nodes
+Visited 386 million nodes
+Visited 387 million nodes
+Visited 388 million nodes
+Visited 389 million nodes
+Visited 390 million nodes
+Visited 391 million nodes
+Visited 392 million nodes
+Visited 393 million nodes
+Visited 394 million nodes
+Visited 395 million nodes
+Visited 396 million nodes
+Visited 397 million nodes
+Visited 398 million nodes
+    Nodes this clue = 36533232
+    Accepted
+Trying clue 187 of 256 at (0,8)    (404 seconds)
+    Checking uniqueness...
+Visited 399 million nodes
+Visited 400 million nodes
+Visited 401 million nodes
+Visited 402 million nodes
+Visited 403 million nodes
+Visited 404 million nodes
+Visited 405 million nodes
+Visited 406 million nodes
+Visited 407 million nodes
+Visited 408 million nodes
+Visited 409 million nodes
+Visited 410 million nodes
+Visited 411 million nodes
+Visited 412 million nodes
+Visited 413 million nodes
+Visited 414 million nodes
+Visited 415 million nodes
+Visited 416 million nodes
+Visited 417 million nodes
+Visited 418 million nodes
+Visited 419 million nodes
+Visited 420 million nodes
+Visited 421 million nodes
+Visited 422 million nodes
+Visited 423 million nodes
+Visited 424 million nodes
+Visited 425 million nodes
+Visited 426 million nodes
+Visited 427 million nodes
+Visited 428 million nodes
+Visited 429 million nodes
+Visited 430 million nodes
+Visited 431 million nodes
+Visited 432 million nodes
+Visited 433 million nodes
+Visited 434 million nodes
+Visited 435 million nodes
+Visited 436 million nodes
+Visited 437 million nodes
+Visited 438 million nodes
+Visited 439 million nodes
+Visited 440 million nodes
+Visited 441 million nodes
+Visited 442 million nodes
+Visited 443 million nodes
+Visited 444 million nodes
+Visited 445 million nodes
+Visited 446 million nodes
+Visited 447 million nodes
+    Nodes this clue = 48719761
+    Accepted
+Trying clue 188 of 256 at (10,7)    (455 seconds)
+    Checking uniqueness...
+Visited 448 million nodes
+Visited 449 million nodes
+Visited 450 million nodes
+Visited 451 million nodes
+Visited 452 million nodes
+Visited 453 million nodes
+Visited 454 million nodes
+Visited 455 million nodes
+Visited 456 million nodes
+Visited 457 million nodes
+Visited 458 million nodes
+Visited 459 million nodes
+    Nodes this clue = 12478610
+    Rejected
+Trying clue 189 of 256 at (6,15)    (467 seconds)
+    Checking uniqueness...
+Visited 460 million nodes
+Visited 461 million nodes
+Visited 462 million nodes
+Visited 463 million nodes
+Visited 464 million nodes
+Visited 465 million nodes
+Visited 466 million nodes
+Visited 467 million nodes
+Visited 468 million nodes
+Visited 469 million nodes
+Visited 470 million nodes
+    Nodes this clue = 10372265
+    Rejected
+Trying clue 190 of 256 at (13,12)    (478 seconds)
+    Checking uniqueness...
+Visited 471 million nodes
+Visited 472 million nodes
+Visited 473 million nodes
+Visited 474 million nodes
+Visited 475 million nodes
+Visited 476 million nodes
+Visited 477 million nodes
+Visited 478 million nodes
+Visited 479 million nodes
+Visited 480 million nodes
+Visited 481 million nodes
+Visited 482 million nodes
+Visited 483 million nodes
+Visited 484 million nodes
+Visited 485 million nodes
+Visited 486 million nodes
+Visited 487 million nodes
+Visited 488 million nodes
+Visited 489 million nodes
+Visited 490 million nodes
+Visited 491 million nodes
+Visited 492 million nodes
+Visited 493 million nodes
+Visited 494 million nodes
+Visited 495 million nodes
+Visited 496 million nodes
+Visited 497 million nodes
+Visited 498 million nodes
+Visited 499 million nodes
+Visited 500 million nodes
+Visited 501 million nodes
+Visited 502 million nodes
+Visited 503 million nodes
+Visited 504 million nodes
+Visited 505 million nodes
+Visited 506 million nodes
+Visited 507 million nodes
+Visited 508 million nodes
+Visited 509 million nodes
+Visited 510 million nodes
+Visited 511 million nodes
+Visited 512 million nodes
+Visited 513 million nodes
+Visited 514 million nodes
+Visited 515 million nodes
+Visited 516 million nodes
+Visited 517 million nodes
+Visited 518 million nodes
+Visited 519 million nodes
+Visited 520 million nodes
+Visited 521 million nodes
+Visited 522 million nodes
+Visited 523 million nodes
+Visited 524 million nodes
+Visited 525 million nodes
+Visited 526 million nodes
+Visited 527 million nodes
+Visited 528 million nodes
+Visited 529 million nodes
+Visited 530 million nodes
+Visited 531 million nodes
+Visited 532 million nodes
+Visited 533 million nodes
+Visited 534 million nodes
+Visited 535 million nodes
+Visited 536 million nodes
+Visited 537 million nodes
+Visited 538 million nodes
+Visited 539 million nodes
+Visited 540 million nodes
+    Nodes this clue = 70644353
+    Accepted
+Trying clue 191 of 256 at (3,11)    (556 seconds)
+    Checking uniqueness...
+Visited 541 million nodes
+Visited 542 million nodes
+Visited 543 million nodes
+Visited 544 million nodes
+    Nodes this clue = 3607371
+    Rejected
+Trying clue 192 of 256 at (1,0)    (560 seconds)
+    Checking uniqueness...
+Visited 545 million nodes
+Visited 546 million nodes
+Visited 547 million nodes
+Visited 548 million nodes
+Visited 549 million nodes
+Visited 550 million nodes
+Visited 551 million nodes
+Visited 552 million nodes
+Visited 553 million nodes
+Visited 554 million nodes
+Visited 555 million nodes
+Visited 556 million nodes
+Visited 557 million nodes
+Visited 558 million nodes
+Visited 559 million nodes
+    Nodes this clue = 14765212
+    Rejected
+Trying clue 193 of 256 at (8,3)    (576 seconds)
+    Checking uniqueness...
+Visited 560 million nodes
+Visited 561 million nodes
+    Nodes this clue = 1783145
+    Rejected
+Trying clue 194 of 256 at (0,3)    (578 seconds)
+    Checking uniqueness...
+Visited 562 million nodes
+Visited 563 million nodes
+Visited 564 million nodes
+Visited 565 million nodes
+Visited 566 million nodes
+Visited 567 million nodes
+Visited 568 million nodes
+Visited 569 million nodes
+Visited 570 million nodes
+Visited 571 million nodes
+Visited 572 million nodes
+Visited 573 million nodes
+Visited 574 million nodes
+Visited 575 million nodes
+Visited 576 million nodes
+Visited 577 million nodes
+Visited 578 million nodes
+Visited 579 million nodes
+Visited 580 million nodes
+Visited 581 million nodes
+Visited 582 million nodes
+Visited 583 million nodes
+Visited 584 million nodes
+Visited 585 million nodes
+Visited 586 million nodes
+Visited 587 million nodes
+Visited 588 million nodes
+Visited 589 million nodes
+Visited 590 million nodes
+Visited 591 million nodes
+Visited 592 million nodes
+Visited 593 million nodes
+Visited 594 million nodes
+Visited 595 million nodes
+Visited 596 million nodes
+Visited 597 million nodes
+Visited 598 million nodes
+Visited 599 million nodes
+Visited 600 million nodes
+Visited 601 million nodes
+Visited 602 million nodes
+Visited 603 million nodes
+Visited 604 million nodes
+Visited 605 million nodes
+Visited 606 million nodes
+Visited 607 million nodes
+Visited 608 million nodes
+Visited 609 million nodes
+Visited 610 million nodes
+Visited 611 million nodes
+Visited 612 million nodes
+Visited 613 million nodes
+Visited 614 million nodes
+Visited 615 million nodes
+Visited 616 million nodes
+Visited 617 million nodes
+Visited 618 million nodes
+Visited 619 million nodes
+Visited 620 million nodes
+Visited 621 million nodes
+Visited 622 million nodes
+Visited 623 million nodes
+Visited 624 million nodes
+Visited 625 million nodes
+Visited 626 million nodes
+Visited 627 million nodes
+Visited 628 million nodes
+Visited 629 million nodes
+Visited 630 million nodes
+Visited 631 million nodes
+Visited 632 million nodes
+Visited 633 million nodes
+Visited 634 million nodes
+Visited 635 million nodes
+Visited 636 million nodes
+Visited 637 million nodes
+Visited 638 million nodes
+Visited 639 million nodes
+Visited 640 million nodes
+Visited 641 million nodes
+Visited 642 million nodes
+Visited 643 million nodes
+Visited 644 million nodes
+Visited 645 million nodes
+Visited 646 million nodes
+Visited 647 million nodes
+Visited 648 million nodes
+Visited 649 million nodes
+Visited 650 million nodes
+Visited 651 million nodes
+Visited 652 million nodes
+Visited 653 million nodes
+Visited 654 million nodes
+Visited 655 million nodes
+Visited 656 million nodes
+Visited 657 million nodes
+Visited 658 million nodes
+Visited 659 million nodes
+Visited 660 million nodes
+Visited 661 million nodes
+Visited 662 million nodes
+Visited 663 million nodes
+Visited 664 million nodes
+Visited 665 million nodes
+Visited 666 million nodes
+Visited 667 million nodes
+Visited 668 million nodes
+Visited 669 million nodes
+Visited 670 million nodes
+Visited 671 million nodes
+Visited 672 million nodes
+Visited 673 million nodes
+    Nodes this clue = 112084415
+    Accepted
+Trying clue 195 of 256 at (15,10)    (692 seconds)
+    Checking uniqueness...
+Visited 674 million nodes
+Visited 675 million nodes
+Visited 676 million nodes
+Visited 677 million nodes
+Visited 678 million nodes
+Visited 679 million nodes
+Visited 680 million nodes
+Visited 681 million nodes
+Visited 682 million nodes
+Visited 683 million nodes
+Visited 684 million nodes
+Visited 685 million nodes
+Visited 686 million nodes
+Visited 687 million nodes
+    Nodes this clue = 14587436
+    Rejected
+Trying clue 196 of 256 at (13,6)    (706 seconds)
+    Checking uniqueness...
+Visited 688 million nodes
+Visited 689 million nodes
+Visited 690 million nodes
+Visited 691 million nodes
+Visited 692 million nodes
+Visited 693 million nodes
+Visited 694 million nodes
+Visited 695 million nodes
+Visited 696 million nodes
+Visited 697 million nodes
+Visited 698 million nodes
+Visited 699 million nodes
+Visited 700 million nodes
+Visited 701 million nodes
+Visited 702 million nodes
+Visited 703 million nodes
+Visited 704 million nodes
+Visited 705 million nodes
+    Nodes this clue = 17723495
+    Rejected
+Trying clue 197 of 256 at (7,10)    (724 seconds)
+    Checking uniqueness...
+Visited 706 million nodes
+Visited 707 million nodes
+Visited 708 million nodes
+Visited 709 million nodes
+Visited 710 million nodes
+Visited 711 million nodes
+Visited 712 million nodes
+Visited 713 million nodes
+Visited 714 million nodes
+Visited 715 million nodes
+Visited 716 million nodes
+Visited 717 million nodes
+Visited 718 million nodes
+Visited 719 million nodes
+Visited 720 million nodes
+Visited 721 million nodes
+Visited 722 million nodes
+Visited 723 million nodes
+Visited 724 million nodes
+Visited 725 million nodes
+Visited 726 million nodes
+Visited 727 million nodes
+Visited 728 million nodes
+Visited 729 million nodes
+Visited 730 million nodes
+Visited 731 million nodes
+Visited 732 million nodes
+Visited 733 million nodes
+Visited 734 million nodes
+Visited 735 million nodes
+Visited 736 million nodes
+Visited 737 million nodes
+Visited 738 million nodes
+Visited 739 million nodes
+Visited 740 million nodes
+Visited 741 million nodes
+Visited 742 million nodes
+Visited 743 million nodes
+Visited 744 million nodes
+Visited 745 million nodes
+Visited 746 million nodes
+Visited 747 million nodes
+Visited 748 million nodes
+Visited 749 million nodes
+Visited 750 million nodes
+Visited 751 million nodes
+Visited 752 million nodes
+Visited 753 million nodes
+Visited 754 million nodes
+Visited 755 million nodes
+Visited 756 million nodes
+Visited 757 million nodes
+Visited 758 million nodes
+Visited 759 million nodes
+Visited 760 million nodes
+Visited 761 million nodes
+Visited 762 million nodes
+Visited 763 million nodes
+Visited 764 million nodes
+Visited 765 million nodes
+Visited 766 million nodes
+Visited 767 million nodes
+Visited 768 million nodes
+Visited 769 million nodes
+Visited 770 million nodes
+Visited 771 million nodes
+Visited 772 million nodes
+Visited 773 million nodes
+Visited 774 million nodes
+Visited 775 million nodes
+Visited 776 million nodes
+Visited 777 million nodes
+Visited 778 million nodes
+Visited 779 million nodes
+Visited 780 million nodes
+Visited 781 million nodes
+Visited 782 million nodes
+Visited 783 million nodes
+Visited 784 million nodes
+Visited 785 million nodes
+Visited 786 million nodes
+Visited 787 million nodes
+Visited 788 million nodes
+Visited 789 million nodes
+Visited 790 million nodes
+Visited 791 million nodes
+Visited 792 million nodes
+Visited 793 million nodes
+Visited 794 million nodes
+Visited 795 million nodes
+Visited 796 million nodes
+Visited 797 million nodes
+Visited 798 million nodes
+Visited 799 million nodes
+Visited 800 million nodes
+Visited 801 million nodes
+Visited 802 million nodes
+Visited 803 million nodes
+Visited 804 million nodes
+Visited 805 million nodes
+Visited 806 million nodes
+Visited 807 million nodes
+Visited 808 million nodes
+Visited 809 million nodes
+Visited 810 million nodes
+Visited 811 million nodes
+Visited 812 million nodes
+Visited 813 million nodes
+Visited 814 million nodes
+Visited 815 million nodes
+Visited 816 million nodes
+Visited 817 million nodes
+Visited 818 million nodes
+Visited 819 million nodes
+Visited 820 million nodes
+Visited 821 million nodes
+Visited 822 million nodes
+Visited 823 million nodes
+Visited 824 million nodes
+Visited 825 million nodes
+Visited 826 million nodes
+Visited 827 million nodes
+Visited 828 million nodes
+Visited 829 million nodes
+Visited 830 million nodes
+Visited 831 million nodes
+Visited 832 million nodes
+Visited 833 million nodes
+Visited 834 million nodes
+Visited 835 million nodes
+Visited 836 million nodes
+Visited 837 million nodes
+Visited 838 million nodes
+Visited 839 million nodes
+Visited 840 million nodes
+Visited 841 million nodes
+Visited 842 million nodes
+Visited 843 million nodes
+Visited 844 million nodes
+Visited 845 million nodes
+Visited 846 million nodes
+    Nodes this clue = 141457103
+    Accepted
+Trying clue 198 of 256 at (2,5)    (865 seconds)
+    Checking uniqueness...
+Visited 847 million nodes
+Visited 848 million nodes
+Visited 849 million nodes
+Visited 850 million nodes
+Visited 851 million nodes
+Visited 852 million nodes
+Visited 853 million nodes
+Visited 854 million nodes
+Visited 855 million nodes
+Visited 856 million nodes
+Visited 857 million nodes
+Visited 858 million nodes
+Visited 859 million nodes
+Visited 860 million nodes
+Visited 861 million nodes
+Visited 862 million nodes
+Visited 863 million nodes
+Visited 864 million nodes
+Visited 865 million nodes
+Visited 866 million nodes
+Visited 867 million nodes
+Visited 868 million nodes
+Visited 869 million nodes
+Visited 870 million nodes
+Visited 871 million nodes
+Visited 872 million nodes
+Visited 873 million nodes
+Visited 874 million nodes
+Visited 875 million nodes
+Visited 876 million nodes
+Visited 877 million nodes
+Visited 878 million nodes
+Visited 879 million nodes
+Visited 880 million nodes
+Visited 881 million nodes
+Visited 882 million nodes
+Visited 883 million nodes
+Visited 884 million nodes
+Visited 885 million nodes
+Visited 886 million nodes
+Visited 887 million nodes
+Visited 888 million nodes
+Visited 889 million nodes
+Visited 890 million nodes
+    Nodes this clue = 43692027
+    Rejected
+Trying clue 199 of 256 at (2,2)    (909 seconds)
+    Checking uniqueness...
+Visited 891 million nodes
+Visited 892 million nodes
+Visited 893 million nodes
+Visited 894 million nodes
+Visited 895 million nodes
+Visited 896 million nodes
+Visited 897 million nodes
+Visited 898 million nodes
+Visited 899 million nodes
+Visited 900 million nodes
+Visited 901 million nodes
+Visited 902 million nodes
+Visited 903 million nodes
+Visited 904 million nodes
+Visited 905 million nodes
+Visited 906 million nodes
+Visited 907 million nodes
+Visited 908 million nodes
+Visited 909 million nodes
+Visited 910 million nodes
+Visited 911 million nodes
+Visited 912 million nodes
+Visited 913 million nodes
+Visited 914 million nodes
+Visited 915 million nodes
+Visited 916 million nodes
+Visited 917 million nodes
+Visited 918 million nodes
+Visited 919 million nodes
+Visited 920 million nodes
+Visited 921 million nodes
+Visited 922 million nodes
+Visited 923 million nodes
+Visited 924 million nodes
+Visited 925 million nodes
+Visited 926 million nodes
+Visited 927 million nodes
+Visited 928 million nodes
+Visited 929 million nodes
+Visited 930 million nodes
+Visited 931 million nodes
+Visited 932 million nodes
+Visited 933 million nodes
+Visited 934 million nodes
+Visited 935 million nodes
+Visited 936 million nodes
+Visited 937 million nodes
+Visited 938 million nodes
+Visited 939 million nodes
+Visited 940 million nodes
+Visited 941 million nodes
+Visited 942 million nodes
+Visited 943 million nodes
+Visited 944 million nodes
+Visited 945 million nodes
+Visited 946 million nodes
+Visited 947 million nodes
+Visited 948 million nodes
+Visited 949 million nodes
+Visited 950 million nodes
+Visited 951 million nodes
+Visited 952 million nodes
+Visited 953 million nodes
+Visited 954 million nodes
+Visited 955 million nodes
+Visited 956 million nodes
+Visited 957 million nodes
+Visited 958 million nodes
+Visited 959 million nodes
+Visited 960 million nodes
+Visited 961 million nodes
+Visited 962 million nodes
+Visited 963 million nodes
+Visited 964 million nodes
+Visited 965 million nodes
+Visited 966 million nodes
+Visited 967 million nodes
+Visited 968 million nodes
+Visited 969 million nodes
+Visited 970 million nodes
+Visited 971 million nodes
+Visited 972 million nodes
+Visited 973 million nodes
+Visited 974 million nodes
+Visited 975 million nodes
+Visited 976 million nodes
+Visited 977 million nodes
+Visited 978 million nodes
+Visited 979 million nodes
+Visited 980 million nodes
+Visited 981 million nodes
+Visited 982 million nodes
+Visited 983 million nodes
+Visited 984 million nodes
+Visited 985 million nodes
+Visited 986 million nodes
+Visited 987 million nodes
+Visited 988 million nodes
+Visited 989 million nodes
+Visited 990 million nodes
+Visited 991 million nodes
+Visited 992 million nodes
+Visited 993 million nodes
+Visited 994 million nodes
+Visited 995 million nodes
+Visited 996 million nodes
+Visited 997 million nodes
+Visited 998 million nodes
+Visited 999 million nodes
+Visited 1000 million nodes
+Visited 1001 million nodes
+Visited 1002 million nodes
+Visited 1003 million nodes
+Visited 1004 million nodes
+Visited 1005 million nodes
+Visited 1006 million nodes
+Visited 1007 million nodes
+Visited 1008 million nodes
+Visited 1009 million nodes
+Visited 1010 million nodes
+Visited 1011 million nodes
+Visited 1012 million nodes
+Visited 1013 million nodes
+Visited 1014 million nodes
+Visited 1015 million nodes
+Visited 1016 million nodes
+Visited 1017 million nodes
+Visited 1018 million nodes
+Visited 1019 million nodes
+Visited 1020 million nodes
+Visited 1021 million nodes
+Visited 1022 million nodes
+Visited 1023 million nodes
+Visited 1024 million nodes
+Visited 1025 million nodes
+Visited 1026 million nodes
+Visited 1027 million nodes
+Visited 1028 million nodes
+Visited 1029 million nodes
+Visited 1030 million nodes
+Visited 1031 million nodes
+Visited 1032 million nodes
+Visited 1033 million nodes
+Visited 1034 million nodes
+Visited 1035 million nodes
+Visited 1036 million nodes
+Visited 1037 million nodes
+Visited 1038 million nodes
+Visited 1039 million nodes
+    Nodes this clue = 149126707
+    Rejected
+Trying clue 200 of 256 at (13,15)    (1057 seconds)
+    Checking uniqueness...
+Visited 1040 million nodes
+Visited 1041 million nodes
+Visited 1042 million nodes
+Visited 1043 million nodes
+Visited 1044 million nodes
+Visited 1045 million nodes
+Visited 1046 million nodes
+Visited 1047 million nodes
+    Nodes this clue = 8197926
+    Rejected
+Trying clue 201 of 256 at (7,7)    (1066 seconds)
+    Checking uniqueness...
+Visited 1048 million nodes
+Visited 1049 million nodes
+Visited 1050 million nodes
+Visited 1051 million nodes
+Visited 1052 million nodes
+Visited 1053 million nodes
+Visited 1054 million nodes
+Visited 1055 million nodes
+Visited 1056 million nodes
+Visited 1057 million nodes
+Visited 1058 million nodes
+Visited 1059 million nodes
+Visited 1060 million nodes
+Visited 1061 million nodes
+Visited 1062 million nodes
+Visited 1063 million nodes
+Visited 1064 million nodes
+Visited 1065 million nodes
+Visited 1066 million nodes
+Visited 1067 million nodes
+Visited 1068 million nodes
+Visited 1069 million nodes
+Visited 1070 million nodes
+Visited 1071 million nodes
+Visited 1072 million nodes
+Visited 1073 million nodes
+Visited 1074 million nodes
+Visited 1075 million nodes
+Visited 1076 million nodes
+Visited 1077 million nodes
+Visited 1078 million nodes
+    Nodes this clue = 30614146
+    Rejected
+Trying clue 202 of 256 at (1,7)    (1097 seconds)
+    Checking uniqueness...
+Visited 1079 million nodes
+Visited 1080 million nodes
+Visited 1081 million nodes
+Visited 1082 million nodes
+Visited 1083 million nodes
+Visited 1084 million nodes
+Visited 1085 million nodes
+Visited 1086 million nodes
+Visited 1087 million nodes
+Visited 1088 million nodes
+Visited 1089 million nodes
+Visited 1090 million nodes
+Visited 1091 million nodes
+Visited 1092 million nodes
+Visited 1093 million nodes
+Visited 1094 million nodes
+Visited 1095 million nodes
+Visited 1096 million nodes
+Visited 1097 million nodes
+Visited 1098 million nodes
+Visited 1099 million nodes
+Visited 1100 million nodes
+Visited 1101 million nodes
+Visited 1102 million nodes
+Visited 1103 million nodes
+    Nodes this clue = 24828369
+    Rejected
+Trying clue 203 of 256 at (13,13)    (1119 seconds)
+    Checking uniqueness...
+Visited 1104 million nodes
+Visited 1105 million nodes
+Visited 1106 million nodes
+Visited 1107 million nodes
+Visited 1108 million nodes
+Visited 1109 million nodes
+Visited 1110 million nodes
+Visited 1111 million nodes
+Visited 1112 million nodes
+Visited 1113 million nodes
+Visited 1114 million nodes
+Visited 1115 million nodes
+Visited 1116 million nodes
+Visited 1117 million nodes
+Visited 1118 million nodes
+Visited 1119 million nodes
+Visited 1120 million nodes
+Visited 1121 million nodes
+Visited 1122 million nodes
+    Nodes this clue = 18749889
+    Rejected
+Trying clue 204 of 256 at (2,10)    (1138 seconds)
+    Checking uniqueness...
+Visited 1123 million nodes
+Visited 1124 million nodes
+Visited 1125 million nodes
+Visited 1126 million nodes
+Visited 1127 million nodes
+Visited 1128 million nodes
+Visited 1129 million nodes
+Visited 1130 million nodes
+    Nodes this clue = 8136719
+    Rejected
+Trying clue 205 of 256 at (12,14)    (1147 seconds)
+    Checking uniqueness...
+Visited 1131 million nodes
+Visited 1132 million nodes
+Visited 1133 million nodes
+Visited 1134 million nodes
+Visited 1135 million nodes
+Visited 1136 million nodes
+Visited 1137 million nodes
+Visited 1138 million nodes
+Visited 1139 million nodes
+Visited 1140 million nodes
+Visited 1141 million nodes
+Visited 1142 million nodes
+Visited 1143 million nodes
+Visited 1144 million nodes
+Visited 1145 million nodes
+Visited 1146 million nodes
+Visited 1147 million nodes
+Visited 1148 million nodes
+Visited 1149 million nodes
+Visited 1150 million nodes
+Visited 1151 million nodes
+Visited 1152 million nodes
+Visited 1153 million nodes
+Visited 1154 million nodes
+Visited 1155 million nodes
+Visited 1156 million nodes
+Visited 1157 million nodes
+Visited 1158 million nodes
+Visited 1159 million nodes
+Visited 1160 million nodes
+Visited 1161 million nodes
+Visited 1162 million nodes
+Visited 1163 million nodes
+Visited 1164 million nodes
+Visited 1165 million nodes
+Visited 1166 million nodes
+Visited 1167 million nodes
+Visited 1168 million nodes
+Visited 1169 million nodes
+Visited 1170 million nodes
+Visited 1171 million nodes
+Visited 1172 million nodes
+Visited 1173 million nodes
+Visited 1174 million nodes
+Visited 1175 million nodes
+Visited 1176 million nodes
+Visited 1177 million nodes
+Visited 1178 million nodes
+Visited 1179 million nodes
+Visited 1180 million nodes
+Visited 1181 million nodes
+Visited 1182 million nodes
+Visited 1183 million nodes
+Visited 1184 million nodes
+Visited 1185 million nodes
+Visited 1186 million nodes
+Visited 1187 million nodes
+Visited 1188 million nodes
+Visited 1189 million nodes
+Visited 1190 million nodes
+Visited 1191 million nodes
+Visited 1192 million nodes
+Visited 1193 million nodes
+Visited 1194 million nodes
+Visited 1195 million nodes
+Visited 1196 million nodes
+Visited 1197 million nodes
+Visited 1198 million nodes
+Visited 1199 million nodes
+Visited 1200 million nodes
+Visited 1201 million nodes
+Visited 1202 million nodes
+Visited 1203 million nodes
+Visited 1204 million nodes
+Visited 1205 million nodes
+Visited 1206 million nodes
+Visited 1207 million nodes
+Visited 1208 million nodes
+Visited 1209 million nodes
+Visited 1210 million nodes
+Visited 1211 million nodes
+Visited 1212 million nodes
+Visited 1213 million nodes
+Visited 1214 million nodes
+Visited 1215 million nodes
+Visited 1216 million nodes
+Visited 1217 million nodes
+Visited 1218 million nodes
+Visited 1219 million nodes
+Visited 1220 million nodes
+Visited 1221 million nodes
+Visited 1222 million nodes
+Visited 1223 million nodes
+Visited 1224 million nodes
+Visited 1225 million nodes
+Visited 1226 million nodes
+Visited 1227 million nodes
+Visited 1228 million nodes
+Visited 1229 million nodes
+Visited 1230 million nodes
+Visited 1231 million nodes
+Visited 1232 million nodes
+Visited 1233 million nodes
+Visited 1234 million nodes
+Visited 1235 million nodes
+Visited 1236 million nodes
+Visited 1237 million nodes
+Visited 1238 million nodes
+Visited 1239 million nodes
+Visited 1240 million nodes
+Visited 1241 million nodes
+Visited 1242 million nodes
+Visited 1243 million nodes
+Visited 1244 million nodes
+Visited 1245 million nodes
+Visited 1246 million nodes
+Visited 1247 million nodes
+Visited 1248 million nodes
+Visited 1249 million nodes
+Visited 1250 million nodes
+Visited 1251 million nodes
+Visited 1252 million nodes
+Visited 1253 million nodes
+Visited 1254 million nodes
+Visited 1255 million nodes
+Visited 1256 million nodes
+Visited 1257 million nodes
+Visited 1258 million nodes
+Visited 1259 million nodes
+Visited 1260 million nodes
+Visited 1261 million nodes
+Visited 1262 million nodes
+Visited 1263 million nodes
+Visited 1264 million nodes
+Visited 1265 million nodes
+Visited 1266 million nodes
+Visited 1267 million nodes
+Visited 1268 million nodes
+Visited 1269 million nodes
+Visited 1270 million nodes
+Visited 1271 million nodes
+Visited 1272 million nodes
+Visited 1273 million nodes
+Visited 1274 million nodes
+Visited 1275 million nodes
+Visited 1276 million nodes
+Visited 1277 million nodes
+Visited 1278 million nodes
+Visited 1279 million nodes
+Visited 1280 million nodes
+Visited 1281 million nodes
+Visited 1282 million nodes
+Visited 1283 million nodes
+Visited 1284 million nodes
+Visited 1285 million nodes
+Visited 1286 million nodes
+Visited 1287 million nodes
+Visited 1288 million nodes
+Visited 1289 million nodes
+Visited 1290 million nodes
+Visited 1291 million nodes
+Visited 1292 million nodes
+Visited 1293 million nodes
+Visited 1294 million nodes
+Visited 1295 million nodes
+Visited 1296 million nodes
+Visited 1297 million nodes
+Visited 1298 million nodes
+Visited 1299 million nodes
+Visited 1300 million nodes
+Visited 1301 million nodes
+Visited 1302 million nodes
+Visited 1303 million nodes
+Visited 1304 million nodes
+Visited 1305 million nodes
+Visited 1306 million nodes
+Visited 1307 million nodes
+Visited 1308 million nodes
+Visited 1309 million nodes
+Visited 1310 million nodes
+Visited 1311 million nodes
+Visited 1312 million nodes
+Visited 1313 million nodes
+Visited 1314 million nodes
+Visited 1315 million nodes
+Visited 1316 million nodes
+Visited 1317 million nodes
+Visited 1318 million nodes
+Visited 1319 million nodes
+Visited 1320 million nodes
+Visited 1321 million nodes
+Visited 1322 million nodes
+Visited 1323 million nodes
+Visited 1324 million nodes
+Visited 1325 million nodes
+Visited 1326 million nodes
+Visited 1327 million nodes
+Visited 1328 million nodes
+Visited 1329 million nodes
+Visited 1330 million nodes
+Visited 1331 million nodes
+Visited 1332 million nodes
+Visited 1333 million nodes
+Visited 1334 million nodes
+Visited 1335 million nodes
+Visited 1336 million nodes
+Visited 1337 million nodes
+Visited 1338 million nodes
+Visited 1339 million nodes
+Visited 1340 million nodes
+Visited 1341 million nodes
+Visited 1342 million nodes
+Visited 1343 million nodes
+Visited 1344 million nodes
+Visited 1345 million nodes
+Visited 1346 million nodes
+Visited 1347 million nodes
+Visited 1348 million nodes
+Visited 1349 million nodes
+Visited 1350 million nodes
+Visited 1351 million nodes
+Visited 1352 million nodes
+Visited 1353 million nodes
+Visited 1354 million nodes
+Visited 1355 million nodes
+Visited 1356 million nodes
+Visited 1357 million nodes
+Visited 1358 million nodes
+Visited 1359 million nodes
+Visited 1360 million nodes
+Visited 1361 million nodes
+Visited 1362 million nodes
+Visited 1363 million nodes
+Visited 1364 million nodes
+Visited 1365 million nodes
+Visited 1366 million nodes
+Visited 1367 million nodes
+Visited 1368 million nodes
+Visited 1369 million nodes
+Visited 1370 million nodes
+Visited 1371 million nodes
+Visited 1372 million nodes
+Visited 1373 million nodes
+Visited 1374 million nodes
+Visited 1375 million nodes
+Visited 1376 million nodes
+Visited 1377 million nodes
+Visited 1378 million nodes
+Visited 1379 million nodes
+Visited 1380 million nodes
+Visited 1381 million nodes
+Visited 1382 million nodes
+Visited 1383 million nodes
+Visited 1384 million nodes
+Visited 1385 million nodes
+Visited 1386 million nodes
+Visited 1387 million nodes
+Visited 1388 million nodes
+Visited 1389 million nodes
+Visited 1390 million nodes
+Visited 1391 million nodes
+Visited 1392 million nodes
+Visited 1393 million nodes
+Visited 1394 million nodes
+Visited 1395 million nodes
+Visited 1396 million nodes
+Visited 1397 million nodes
+Visited 1398 million nodes
+Visited 1399 million nodes
+Visited 1400 million nodes
+Visited 1401 million nodes
+Visited 1402 million nodes
+Visited 1403 million nodes
+    Nodes this clue = 272898905
+    Rejected
+Trying clue 206 of 256 at (13,8)    (1366 seconds)
+    Checking uniqueness...
+    Nodes this clue = 232866
+    Rejected
+Trying clue 207 of 256 at (9,2)    (1366 seconds)
+    Checking uniqueness...
+Visited 1404 million nodes
+Visited 1405 million nodes
+Visited 1406 million nodes
+Visited 1407 million nodes
+Visited 1408 million nodes
+Visited 1409 million nodes
+Visited 1410 million nodes
+Visited 1411 million nodes
+Visited 1412 million nodes
+Visited 1413 million nodes
+Visited 1414 million nodes
+Visited 1415 million nodes
+Visited 1416 million nodes
+Visited 1417 million nodes
+Visited 1418 million nodes
+Visited 1419 million nodes
+Visited 1420 million nodes
+Visited 1421 million nodes
+Visited 1422 million nodes
+Visited 1423 million nodes
+Visited 1424 million nodes
+Visited 1425 million nodes
+Visited 1426 million nodes
+Visited 1427 million nodes
+    Nodes this clue = 24501734
+    Rejected
+Trying clue 208 of 256 at (6,8)    (1389 seconds)
+    Checking uniqueness...
+Visited 1428 million nodes
+Visited 1429 million nodes
+Visited 1430 million nodes
+Visited 1431 million nodes
+Visited 1432 million nodes
+Visited 1433 million nodes
+Visited 1434 million nodes
+Visited 1435 million nodes
+Visited 1436 million nodes
+Visited 1437 million nodes
+Visited 1438 million nodes
+    Nodes this clue = 10126317
+    Rejected
+Trying clue 209 of 256 at (13,9)    (1399 seconds)
+    Checking uniqueness...
+Visited 1439 million nodes
+Visited 1440 million nodes
+Visited 1441 million nodes
+Visited 1442 million nodes
+Visited 1443 million nodes
+Visited 1444 million nodes
+Visited 1445 million nodes
+Visited 1446 million nodes
+Visited 1447 million nodes
+Visited 1448 million nodes
+Visited 1449 million nodes
+Visited 1450 million nodes
+Visited 1451 million nodes
+Visited 1452 million nodes
+Visited 1453 million nodes
+Visited 1454 million nodes
+Visited 1455 million nodes
+    Nodes this clue = 17366272
+    Rejected
+Trying clue 210 of 256 at (5,4)    (1414 seconds)
+    Checking uniqueness...
+Visited 1456 million nodes
+Visited 1457 million nodes
+Visited 1458 million nodes
+Visited 1459 million nodes
+Visited 1460 million nodes
+Visited 1461 million nodes
+Visited 1462 million nodes
+Visited 1463 million nodes
+Visited 1464 million nodes
+Visited 1465 million nodes
+Visited 1466 million nodes
+Visited 1467 million nodes
+Visited 1468 million nodes
+Visited 1469 million nodes
+Visited 1470 million nodes
+Visited 1471 million nodes
+Visited 1472 million nodes
+Visited 1473 million nodes
+Visited 1474 million nodes
+Visited 1475 million nodes
+Visited 1476 million nodes
+Visited 1477 million nodes
+Visited 1478 million nodes
+Visited 1479 million nodes
+Visited 1480 million nodes
+Visited 1481 million nodes
+Visited 1482 million nodes
+Visited 1483 million nodes
+Visited 1484 million nodes
+Visited 1485 million nodes
+Visited 1486 million nodes
+Visited 1487 million nodes
+Visited 1488 million nodes
+Visited 1489 million nodes
+    Nodes this clue = 33727459
+    Rejected
+Trying clue 211 of 256 at (11,5)    (1447 seconds)
+    Checking uniqueness...
+Visited 1490 million nodes
+Visited 1491 million nodes
+Visited 1492 million nodes
+Visited 1493 million nodes
+Visited 1494 million nodes
+Visited 1495 million nodes
+Visited 1496 million nodes
+Visited 1497 million nodes
+Visited 1498 million nodes
+Visited 1499 million nodes
+Visited 1500 million nodes
+Visited 1501 million nodes
+Visited 1502 million nodes
+Visited 1503 million nodes
+Visited 1504 million nodes
+Visited 1505 million nodes
+Visited 1506 million nodes
+Visited 1507 million nodes
+Visited 1508 million nodes
+Visited 1509 million nodes
+Visited 1510 million nodes
+Visited 1511 million nodes
+Visited 1512 million nodes
+Visited 1513 million nodes
+Visited 1514 million nodes
+Visited 1515 million nodes
+Visited 1516 million nodes
+    Nodes this clue = 27269117
+    Rejected
+Trying clue 212 of 256 at (12,6)    (1472 seconds)
+    Checking uniqueness...
+Visited 1517 million nodes
+Visited 1518 million nodes
+Visited 1519 million nodes
+Visited 1520 million nodes
+Visited 1521 million nodes
+Visited 1522 million nodes
+Visited 1523 million nodes
+Visited 1524 million nodes
+Visited 1525 million nodes
+Visited 1526 million nodes
+Visited 1527 million nodes
+Visited 1528 million nodes
+Visited 1529 million nodes
+Visited 1530 million nodes
+Visited 1531 million nodes
+Visited 1532 million nodes
+Visited 1533 million nodes
+Visited 1534 million nodes
+Visited 1535 million nodes
+Visited 1536 million nodes
+Visited 1537 million nodes
+Visited 1538 million nodes
+Visited 1539 million nodes
+Visited 1540 million nodes
+Visited 1541 million nodes
+Visited 1542 million nodes
+Visited 1543 million nodes
+Visited 1544 million nodes
+Visited 1545 million nodes
+Visited 1546 million nodes
+Visited 1547 million nodes
+Visited 1548 million nodes
+Visited 1549 million nodes
+Visited 1550 million nodes
+Visited 1551 million nodes
+Visited 1552 million nodes
+Visited 1553 million nodes
+Visited 1554 million nodes
+Visited 1555 million nodes
+Visited 1556 million nodes
+Visited 1557 million nodes
+Visited 1558 million nodes
+Visited 1559 million nodes
+Visited 1560 million nodes
+Visited 1561 million nodes
+Visited 1562 million nodes
+Visited 1563 million nodes
+Visited 1564 million nodes
+Visited 1565 million nodes
+Visited 1566 million nodes
+Visited 1567 million nodes
+Visited 1568 million nodes
+Visited 1569 million nodes
+Visited 1570 million nodes
+Visited 1571 million nodes
+Visited 1572 million nodes
+Visited 1573 million nodes
+Visited 1574 million nodes
+Visited 1575 million nodes
+Visited 1576 million nodes
+Visited 1577 million nodes
+Visited 1578 million nodes
+Visited 1579 million nodes
+Visited 1580 million nodes
+Visited 1581 million nodes
+Visited 1582 million nodes
+Visited 1583 million nodes
+Visited 1584 million nodes
+Visited 1585 million nodes
+Visited 1586 million nodes
+Visited 1587 million nodes
+Visited 1588 million nodes
+Visited 1589 million nodes
+Visited 1590 million nodes
+Visited 1591 million nodes
+Visited 1592 million nodes
+Visited 1593 million nodes
+Visited 1594 million nodes
+Visited 1595 million nodes
+Visited 1596 million nodes
+Visited 1597 million nodes
+Visited 1598 million nodes
+Visited 1599 million nodes
+Visited 1600 million nodes
+Visited 1601 million nodes
+Visited 1602 million nodes
+Visited 1603 million nodes
+Visited 1604 million nodes
+Visited 1605 million nodes
+Visited 1606 million nodes
+Visited 1607 million nodes
+Visited 1608 million nodes
+Visited 1609 million nodes
+Visited 1610 million nodes
+Visited 1611 million nodes
+Visited 1612 million nodes
+Visited 1613 million nodes
+Visited 1614 million nodes
+Visited 1615 million nodes
+Visited 1616 million nodes
+Visited 1617 million nodes
+Visited 1618 million nodes
+Visited 1619 million nodes
+Visited 1620 million nodes
+Visited 1621 million nodes
+Visited 1622 million nodes
+Visited 1623 million nodes
+Visited 1624 million nodes
+Visited 1625 million nodes
+Visited 1626 million nodes
+Visited 1627 million nodes
+Visited 1628 million nodes
+Visited 1629 million nodes
+Visited 1630 million nodes
+Visited 1631 million nodes
+Visited 1632 million nodes
+Visited 1633 million nodes
+Visited 1634 million nodes
+Visited 1635 million nodes
+Visited 1636 million nodes
+Visited 1637 million nodes
+Visited 1638 million nodes
+Visited 1639 million nodes
+Visited 1640 million nodes
+Visited 1641 million nodes
+Visited 1642 million nodes
+Visited 1643 million nodes
+Visited 1644 million nodes
+Visited 1645 million nodes
+Visited 1646 million nodes
+Visited 1647 million nodes
+Visited 1648 million nodes
+Visited 1649 million nodes
+Visited 1650 million nodes
+Visited 1651 million nodes
+Visited 1652 million nodes
+Visited 1653 million nodes
+Visited 1654 million nodes
+Visited 1655 million nodes
+Visited 1656 million nodes
+Visited 1657 million nodes
+Visited 1658 million nodes
+    Nodes this clue = 142209477
+    Accepted
+Trying clue 213 of 256 at (13,14)    (1604 seconds)
+    Checking uniqueness...
+Visited 1659 million nodes
+Visited 1660 million nodes
+    Nodes this clue = 1585747
+    Rejected
+Trying clue 214 of 256 at (6,13)    (1606 seconds)
+    Checking uniqueness...
+Visited 1661 million nodes
+Visited 1662 million nodes
+Visited 1663 million nodes
+Visited 1664 million nodes
+Visited 1665 million nodes
+Visited 1666 million nodes
+Visited 1667 million nodes
+Visited 1668 million nodes
+Visited 1669 million nodes
+Visited 1670 million nodes
+Visited 1671 million nodes
+Visited 1672 million nodes
+Visited 1673 million nodes
+Visited 1674 million nodes
+Visited 1675 million nodes
+Visited 1676 million nodes
+Visited 1677 million nodes
+Visited 1678 million nodes
+Visited 1679 million nodes
+Visited 1680 million nodes
+Visited 1681 million nodes
+Visited 1682 million nodes
+Visited 1683 million nodes
+Visited 1684 million nodes
+Visited 1685 million nodes
+Visited 1686 million nodes
+Visited 1687 million nodes
+Visited 1688 million nodes
+Visited 1689 million nodes
+Visited 1690 million nodes
+Visited 1691 million nodes
+Visited 1692 million nodes
+Visited 1693 million nodes
+Visited 1694 million nodes
+Visited 1695 million nodes
+Visited 1696 million nodes
+Visited 1697 million nodes
+Visited 1698 million nodes
+Visited 1699 million nodes
+Visited 1700 million nodes
+Visited 1701 million nodes
+Visited 1702 million nodes
+    Nodes this clue = 42165986
+    Rejected
+Trying clue 215 of 256 at (5,12)    (1645 seconds)
+    Checking uniqueness...
+Visited 1703 million nodes
+Visited 1704 million nodes
+Visited 1705 million nodes
+Visited 1706 million nodes
+Visited 1707 million nodes
+Visited 1708 million nodes
+Visited 1709 million nodes
+Visited 1710 million nodes
+Visited 1711 million nodes
+Visited 1712 million nodes
+Visited 1713 million nodes
+Visited 1714 million nodes
+Visited 1715 million nodes
+Visited 1716 million nodes
+Visited 1717 million nodes
+Visited 1718 million nodes
+Visited 1719 million nodes
+Visited 1720 million nodes
+Visited 1721 million nodes
+Visited 1722 million nodes
+Visited 1723 million nodes
+Visited 1724 million nodes
+Visited 1725 million nodes
+Visited 1726 million nodes
+Visited 1727 million nodes
+Visited 1728 million nodes
+Visited 1729 million nodes
+Visited 1730 million nodes
+Visited 1731 million nodes
+Visited 1732 million nodes
+Visited 1733 million nodes
+Visited 1734 million nodes
+Visited 1735 million nodes
+Visited 1736 million nodes
+Visited 1737 million nodes
+Visited 1738 million nodes
+Visited 1739 million nodes
+Visited 1740 million nodes
+Visited 1741 million nodes
+Visited 1742 million nodes
+Visited 1743 million nodes
+Visited 1744 million nodes
+Visited 1745 million nodes
+Visited 1746 million nodes
+Visited 1747 million nodes
+Visited 1748 million nodes
+Visited 1749 million nodes
+Visited 1750 million nodes
+Visited 1751 million nodes
+Visited 1752 million nodes
+Visited 1753 million nodes
+Visited 1754 million nodes
+Visited 1755 million nodes
+Visited 1756 million nodes
+Visited 1757 million nodes
+Visited 1758 million nodes
+Visited 1759 million nodes
+Visited 1760 million nodes
+Visited 1761 million nodes
+Visited 1762 million nodes
+Visited 1763 million nodes
+Visited 1764 million nodes
+Visited 1765 million nodes
+Visited 1766 million nodes
+Visited 1767 million nodes
+Visited 1768 million nodes
+Visited 1769 million nodes
+Visited 1770 million nodes
+Visited 1771 million nodes
+Visited 1772 million nodes
+Visited 1773 million nodes
+Visited 1774 million nodes
+Visited 1775 million nodes
+Visited 1776 million nodes
+Visited 1777 million nodes
+Visited 1778 million nodes
+Visited 1779 million nodes
+Visited 1780 million nodes
+Visited 1781 million nodes
+Visited 1782 million nodes
+Visited 1783 million nodes
+Visited 1784 million nodes
+Visited 1785 million nodes
+Visited 1786 million nodes
+Visited 1787 million nodes
+Visited 1788 million nodes
+Visited 1789 million nodes
+Visited 1790 million nodes
+Visited 1791 million nodes
+Visited 1792 million nodes
+Visited 1793 million nodes
+Visited 1794 million nodes
+Visited 1795 million nodes
+Visited 1796 million nodes
+Visited 1797 million nodes
+Visited 1798 million nodes
+Visited 1799 million nodes
+Visited 1800 million nodes
+Visited 1801 million nodes
+Visited 1802 million nodes
+Visited 1803 million nodes
+Visited 1804 million nodes
+    Nodes this clue = 102081115
+    Rejected
+Trying clue 216 of 256 at (3,13)    (1730 seconds)
+    Checking uniqueness...
+Visited 1805 million nodes
+Visited 1806 million nodes
+Visited 1807 million nodes
+Visited 1808 million nodes
+Visited 1809 million nodes
+Visited 1810 million nodes
+Visited 1811 million nodes
+Visited 1812 million nodes
+Visited 1813 million nodes
+Visited 1814 million nodes
+Visited 1815 million nodes
+Visited 1816 million nodes
+Visited 1817 million nodes
+Visited 1818 million nodes
+Visited 1819 million nodes
+Visited 1820 million nodes
+Visited 1821 million nodes
+Visited 1822 million nodes
+Visited 1823 million nodes
+Visited 1824 million nodes
+Visited 1825 million nodes
+Visited 1826 million nodes
+Visited 1827 million nodes
+Visited 1828 million nodes
+Visited 1829 million nodes
+Visited 1830 million nodes
+Visited 1831 million nodes
+Visited 1832 million nodes
+Visited 1833 million nodes
+Visited 1834 million nodes
+Visited 1835 million nodes
+Visited 1836 million nodes
+Visited 1837 million nodes
+Visited 1838 million nodes
+Visited 1839 million nodes
+Visited 1840 million nodes
+Visited 1841 million nodes
+Visited 1842 million nodes
+Visited 1843 million nodes
+Visited 1844 million nodes
+Visited 1845 million nodes
+Visited 1846 million nodes
+Visited 1847 million nodes
+Visited 1848 million nodes
+Visited 1849 million nodes
+    Nodes this clue = 45513441
+    Rejected
+Trying clue 217 of 256 at (5,10)    (1774 seconds)
+    Checking uniqueness...
+Visited 1850 million nodes
+Visited 1851 million nodes
+Visited 1852 million nodes
+Visited 1853 million nodes
+Visited 1854 million nodes
+Visited 1855 million nodes
+Visited 1856 million nodes
+Visited 1857 million nodes
+Visited 1858 million nodes
+Visited 1859 million nodes
+Visited 1860 million nodes
+Visited 1861 million nodes
+Visited 1862 million nodes
+Visited 1863 million nodes
+Visited 1864 million nodes
+Visited 1865 million nodes
+Visited 1866 million nodes
+Visited 1867 million nodes
+Visited 1868 million nodes
+Visited 1869 million nodes
+Visited 1870 million nodes
+Visited 1871 million nodes
+Visited 1872 million nodes
+Visited 1873 million nodes
+Visited 1874 million nodes
+Visited 1875 million nodes
+Visited 1876 million nodes
+Visited 1877 million nodes
+Visited 1878 million nodes
+    Nodes this clue = 28012966
+    Rejected
+Trying clue 218 of 256 at (4,5)    (1801 seconds)
+    Checking uniqueness...
+Visited 1879 million nodes
+Visited 1880 million nodes
+Visited 1881 million nodes
+Visited 1882 million nodes
+Visited 1883 million nodes
+Visited 1884 million nodes
+Visited 1885 million nodes
+Visited 1886 million nodes
+Visited 1887 million nodes
+Visited 1888 million nodes
+Visited 1889 million nodes
+Visited 1890 million nodes
+Visited 1891 million nodes
+Visited 1892 million nodes
+Visited 1893 million nodes
+Visited 1894 million nodes
+Visited 1895 million nodes
+Visited 1896 million nodes
+Visited 1897 million nodes
+Visited 1898 million nodes
+Visited 1899 million nodes
+Visited 1900 million nodes
+Visited 1901 million nodes
+Visited 1902 million nodes
+Visited 1903 million nodes
+Visited 1904 million nodes
+Visited 1905 million nodes
+Visited 1906 million nodes
+Visited 1907 million nodes
+Visited 1908 million nodes
+Visited 1909 million nodes
+Visited 1910 million nodes
+Visited 1911 million nodes
+Visited 1912 million nodes
+Visited 1913 million nodes
+Visited 1914 million nodes
+Visited 1915 million nodes
+Visited 1916 million nodes
+Visited 1917 million nodes
+Visited 1918 million nodes
+Visited 1919 million nodes
+Visited 1920 million nodes
+Visited 1921 million nodes
+Visited 1922 million nodes
+Visited 1923 million nodes
+Visited 1924 million nodes
+Visited 1925 million nodes
+Visited 1926 million nodes
+Visited 1927 million nodes
+Visited 1928 million nodes
+Visited 1929 million nodes
+Visited 1930 million nodes
+Visited 1931 million nodes
+Visited 1932 million nodes
+Visited 1933 million nodes
+Visited 1934 million nodes
+Visited 1935 million nodes
+Visited 1936 million nodes
+Visited 1937 million nodes
+Visited 1938 million nodes
+Visited 1939 million nodes
+Visited 1940 million nodes
+Visited 1941 million nodes
+Visited 1942 million nodes
+Visited 1943 million nodes
+Visited 1944 million nodes
+Visited 1945 million nodes
+Visited 1946 million nodes
+Visited 1947 million nodes
+Visited 1948 million nodes
+Visited 1949 million nodes
+Visited 1950 million nodes
+Visited 1951 million nodes
+Visited 1952 million nodes
+Visited 1953 million nodes
+Visited 1954 million nodes
+Visited 1955 million nodes
+Visited 1956 million nodes
+Visited 1957 million nodes
+Visited 1958 million nodes
+Visited 1959 million nodes
+Visited 1960 million nodes
+Visited 1961 million nodes
+Visited 1962 million nodes
+Visited 1963 million nodes
+Visited 1964 million nodes
+Visited 1965 million nodes
+Visited 1966 million nodes
+Visited 1967 million nodes
+Visited 1968 million nodes
+Visited 1969 million nodes
+Visited 1970 million nodes
+Visited 1971 million nodes
+Visited 1972 million nodes
+Visited 1973 million nodes
+Visited 1974 million nodes
+Visited 1975 million nodes
+Visited 1976 million nodes
+Visited 1977 million nodes
+Visited 1978 million nodes
+Visited 1979 million nodes
+Visited 1980 million nodes
+Visited 1981 million nodes
+Visited 1982 million nodes
+Visited 1983 million nodes
+Visited 1984 million nodes
+Visited 1985 million nodes
+Visited 1986 million nodes
+Visited 1987 million nodes
+Visited 1988 million nodes
+Visited 1989 million nodes
+Visited 1990 million nodes
+Visited 1991 million nodes
+Visited 1992 million nodes
+Visited 1993 million nodes
+Visited 1994 million nodes
+Visited 1995 million nodes
+Visited 1996 million nodes
+Visited 1997 million nodes
+Visited 1998 million nodes
+Visited 1999 million nodes
+Visited 2000 million nodes
+Visited 2001 million nodes
+Visited 2002 million nodes
+Visited 2003 million nodes
+Visited 2004 million nodes
+Visited 2005 million nodes
+Visited 2006 million nodes
+Visited 2007 million nodes
+Visited 2008 million nodes
+Visited 2009 million nodes
+Visited 2010 million nodes
+Visited 2011 million nodes
+Visited 2012 million nodes
+Visited 2013 million nodes
+Visited 2014 million nodes
+Visited 2015 million nodes
+Visited 2016 million nodes
+Visited 2017 million nodes
+Visited 2018 million nodes
+Visited 2019 million nodes
+Visited 2020 million nodes
+Visited 2021 million nodes
+Visited 2022 million nodes
+Visited 2023 million nodes
+Visited 2024 million nodes
+Visited 2025 million nodes
+Visited 2026 million nodes
+Visited 2027 million nodes
+Visited 2028 million nodes
+Visited 2029 million nodes
+Visited 2030 million nodes
+Visited 2031 million nodes
+Visited 2032 million nodes
+Visited 2033 million nodes
+Visited 2034 million nodes
+Visited 2035 million nodes
+Visited 2036 million nodes
+Visited 2037 million nodes
+Visited 2038 million nodes
+Visited 2039 million nodes
+Visited 2040 million nodes
+Visited 2041 million nodes
+Visited 2042 million nodes
+Visited 2043 million nodes
+Visited 2044 million nodes
+Visited 2045 million nodes
+Visited 2046 million nodes
+Visited 2047 million nodes
+Visited 2048 million nodes
+Visited 2049 million nodes
+Visited 2050 million nodes
+Visited 2051 million nodes
+    Nodes this clue = 173486978
+    Rejected
+Trying clue 219 of 256 at (5,13)    (1978 seconds)
+    Checking uniqueness...
+Visited 2052 million nodes
+Visited 2053 million nodes
+Visited 2054 million nodes
+Visited 2055 million nodes
+Visited 2056 million nodes
+Visited 2057 million nodes
+Visited 2058 million nodes
+Visited 2059 million nodes
+Visited 2060 million nodes
+Visited 2061 million nodes
+Visited 2062 million nodes
+    Nodes this clue = 10807690
+    Rejected
+Trying clue 220 of 256 at (15,5)    (1988 seconds)
+    Checking uniqueness...
+Visited 2063 million nodes
+Visited 2064 million nodes
+Visited 2065 million nodes
+Visited 2066 million nodes
+Visited 2067 million nodes
+Visited 2068 million nodes
+Visited 2069 million nodes
+Visited 2070 million nodes
+Visited 2071 million nodes
+Visited 2072 million nodes
+Visited 2073 million nodes
+Visited 2074 million nodes
+Visited 2075 million nodes
+Visited 2076 million nodes
+Visited 2077 million nodes
+Visited 2078 million nodes
+    Nodes this clue = 15706221
+    Rejected
+Trying clue 221 of 256 at (0,2)    (2003 seconds)
+    Checking uniqueness...
+Visited 2079 million nodes
+Visited 2080 million nodes
+Visited 2081 million nodes
+Visited 2082 million nodes
+Visited 2083 million nodes
+Visited 2084 million nodes
+Visited 2085 million nodes
+Visited 2086 million nodes
+Visited 2087 million nodes
+Visited 2088 million nodes
+Visited 2089 million nodes
+Visited 2090 million nodes
+Visited 2091 million nodes
+Visited 2092 million nodes
+Visited 2093 million nodes
+Visited 2094 million nodes
+Visited 2095 million nodes
+Visited 2096 million nodes
+Visited 2097 million nodes
+    Nodes this clue = 19178998
+    Rejected
+Trying clue 222 of 256 at (10,13)    (2019 seconds)
+    Checking uniqueness...
+Visited 2098 million nodes
+Visited 2099 million nodes
+Visited 2100 million nodes
+Visited 2101 million nodes
+Visited 2102 million nodes
+Visited 2103 million nodes
+Visited 2104 million nodes
+Visited 2105 million nodes
+Visited 2106 million nodes
+    Nodes this clue = 9780965
+    Rejected
+Trying clue 223 of 256 at (14,11)    (2028 seconds)
+    Checking uniqueness...
+Visited 2107 million nodes
+Visited 2108 million nodes
+Visited 2109 million nodes
+Visited 2110 million nodes
+Visited 2111 million nodes
+Visited 2112 million nodes
+Visited 2113 million nodes
+Visited 2114 million nodes
+Visited 2115 million nodes
+Visited 2116 million nodes
+Visited 2117 million nodes
+Visited 2118 million nodes
+Visited 2119 million nodes
+Visited 2120 million nodes
+Visited 2121 million nodes
+Visited 2122 million nodes
+Visited 2123 million nodes
+Visited 2124 million nodes
+    Nodes this clue = 17546536
+    Rejected
+Trying clue 224 of 256 at (1,8)    (2046 seconds)
+    Checking uniqueness...
+Visited 2125 million nodes
+Visited 2126 million nodes
+Visited 2127 million nodes
+Visited 2128 million nodes
+Visited 2129 million nodes
+Visited 2130 million nodes
+Visited 2131 million nodes
+Visited 2132 million nodes
+Visited 2133 million nodes
+Visited 2134 million nodes
+Visited 2135 million nodes
+Visited 2136 million nodes
+Visited 2137 million nodes
+Visited 2138 million nodes
+Visited 2139 million nodes
+Visited 2140 million nodes
+Visited 2141 million nodes
+Visited 2142 million nodes
+Visited 2143 million nodes
+Visited 2144 million nodes
+Visited 2145 million nodes
+Visited 2146 million nodes
+Visited 2147 million nodes
+Visited 2148 million nodes
+Visited 2149 million nodes
+Visited 2150 million nodes
+Visited 2151 million nodes
+Visited 2152 million nodes
+Visited 2153 million nodes
+Visited 2154 million nodes
+Visited 2155 million nodes
+Visited 2156 million nodes
+Visited 2157 million nodes
+Visited 2158 million nodes
+Visited 2159 million nodes
+Visited 2160 million nodes
+Visited 2161 million nodes
+Visited 2162 million nodes
+Visited 2163 million nodes
+Visited 2164 million nodes
+Visited 2165 million nodes
+Visited 2166 million nodes
+Visited 2167 million nodes
+Visited 2168 million nodes
+Visited 2169 million nodes
+Visited 2170 million nodes
+Visited 2171 million nodes
+Visited 2172 million nodes
+Visited 2173 million nodes
+Visited 2174 million nodes
+Visited 2175 million nodes
+Visited 2176 million nodes
+Visited 2177 million nodes
+Visited 2178 million nodes
+Visited 2179 million nodes
+Visited 2180 million nodes
+Visited 2181 million nodes
+Visited 2182 million nodes
+Visited 2183 million nodes
+Visited 2184 million nodes
+Visited 2185 million nodes
+Visited 2186 million nodes
+Visited 2187 million nodes
+Visited 2188 million nodes
+Visited 2189 million nodes
+Visited 2190 million nodes
+Visited 2191 million nodes
+Visited 2192 million nodes
+Visited 2193 million nodes
+Visited 2194 million nodes
+Visited 2195 million nodes
+Visited 2196 million nodes
+Visited 2197 million nodes
+Visited 2198 million nodes
+Visited 2199 million nodes
+Visited 2200 million nodes
+Visited 2201 million nodes
+Visited 2202 million nodes
+Visited 2203 million nodes
+Visited 2204 million nodes
+Visited 2205 million nodes
+Visited 2206 million nodes
+Visited 2207 million nodes
+Visited 2208 million nodes
+Visited 2209 million nodes
+Visited 2210 million nodes
+Visited 2211 million nodes
+Visited 2212 million nodes
+Visited 2213 million nodes
+Visited 2214 million nodes
+Visited 2215 million nodes
+Visited 2216 million nodes
+Visited 2217 million nodes
+Visited 2218 million nodes
+Visited 2219 million nodes
+Visited 2220 million nodes
+Visited 2221 million nodes
+Visited 2222 million nodes
+Visited 2223 million nodes
+Visited 2224 million nodes
+Visited 2225 million nodes
+Visited 2226 million nodes
+Visited 2227 million nodes
+Visited 2228 million nodes
+Visited 2229 million nodes
+Visited 2230 million nodes
+Visited 2231 million nodes
+Visited 2232 million nodes
+Visited 2233 million nodes
+Visited 2234 million nodes
+Visited 2235 million nodes
+Visited 2236 million nodes
+Visited 2237 million nodes
+Visited 2238 million nodes
+Visited 2239 million nodes
+Visited 2240 million nodes
+Visited 2241 million nodes
+Visited 2242 million nodes
+Visited 2243 million nodes
+Visited 2244 million nodes
+Visited 2245 million nodes
+Visited 2246 million nodes
+Visited 2247 million nodes
+Visited 2248 million nodes
+Visited 2249 million nodes
+Visited 2250 million nodes
+Visited 2251 million nodes
+Visited 2252 million nodes
+Visited 2253 million nodes
+Visited 2254 million nodes
+Visited 2255 million nodes
+Visited 2256 million nodes
+Visited 2257 million nodes
+Visited 2258 million nodes
+Visited 2259 million nodes
+Visited 2260 million nodes
+Visited 2261 million nodes
+Visited 2262 million nodes
+Visited 2263 million nodes
+Visited 2264 million nodes
+Visited 2265 million nodes
+Visited 2266 million nodes
+Visited 2267 million nodes
+Visited 2268 million nodes
+Visited 2269 million nodes
+Visited 2270 million nodes
+Visited 2271 million nodes
+Visited 2272 million nodes
+Visited 2273 million nodes
+Visited 2274 million nodes
+Visited 2275 million nodes
+    Nodes this clue = 150763240
+    Rejected
+Trying clue 225 of 256 at (4,1)    (2193 seconds)
+    Checking uniqueness...
+Visited 2276 million nodes
+Visited 2277 million nodes
+Visited 2278 million nodes
+Visited 2279 million nodes
+Visited 2280 million nodes
+Visited 2281 million nodes
+Visited 2282 million nodes
+    Nodes this clue = 7611073
+    Rejected
+Trying clue 226 of 256 at (14,1)    (2200 seconds)
+    Checking uniqueness...
+Visited 2283 million nodes
+Visited 2284 million nodes
+Visited 2285 million nodes
+Visited 2286 million nodes
+Visited 2287 million nodes
+Visited 2288 million nodes
+Visited 2289 million nodes
+Visited 2290 million nodes
+Visited 2291 million nodes
+Visited 2292 million nodes
+Visited 2293 million nodes
+Visited 2294 million nodes
+Visited 2295 million nodes
+Visited 2296 million nodes
+Visited 2297 million nodes
+Visited 2298 million nodes
+Visited 2299 million nodes
+Visited 2300 million nodes
+Visited 2301 million nodes
+Visited 2302 million nodes
+    Nodes this clue = 19630237
+    Rejected
+Trying clue 227 of 256 at (8,15)    (2218 seconds)
+    Checking uniqueness...
+Visited 2303 million nodes
+Visited 2304 million nodes
+Visited 2305 million nodes
+Visited 2306 million nodes
+Visited 2307 million nodes
+Visited 2308 million nodes
+Visited 2309 million nodes
+Visited 2310 million nodes
+Visited 2311 million nodes
+Visited 2312 million nodes
+Visited 2313 million nodes
+Visited 2314 million nodes
+Visited 2315 million nodes
+Visited 2316 million nodes
+Visited 2317 million nodes
+Visited 2318 million nodes
+Visited 2319 million nodes
+Visited 2320 million nodes
+Visited 2321 million nodes
+Visited 2322 million nodes
+Visited 2323 million nodes
+Visited 2324 million nodes
+Visited 2325 million nodes
+Visited 2326 million nodes
+Visited 2327 million nodes
+    Nodes this clue = 24665460
+    Rejected
+Trying clue 228 of 256 at (12,2)    (2240 seconds)
+    Checking uniqueness...
+Visited 2328 million nodes
+Visited 2329 million nodes
+Visited 2330 million nodes
+Visited 2331 million nodes
+    Nodes this clue = 4754665
+    Rejected
+Trying clue 229 of 256 at (9,1)    (2244 seconds)
+    Checking uniqueness...
+Visited 2332 million nodes
+Visited 2333 million nodes
+Visited 2334 million nodes
+Visited 2335 million nodes
+Visited 2336 million nodes
+Visited 2337 million nodes
+Visited 2338 million nodes
+Visited 2339 million nodes
+Visited 2340 million nodes
+Visited 2341 million nodes
+Visited 2342 million nodes
+Visited 2343 million nodes
+Visited 2344 million nodes
+Visited 2345 million nodes
+Visited 2346 million nodes
+Visited 2347 million nodes
+Visited 2348 million nodes
+Visited 2349 million nodes
+Visited 2350 million nodes
+Visited 2351 million nodes
+Visited 2352 million nodes
+Visited 2353 million nodes
+Visited 2354 million nodes
+Visited 2355 million nodes
+Visited 2356 million nodes
+Visited 2357 million nodes
+Visited 2358 million nodes
+Visited 2359 million nodes
+Visited 2360 million nodes
+Visited 2361 million nodes
+Visited 2362 million nodes
+Visited 2363 million nodes
+Visited 2364 million nodes
+Visited 2365 million nodes
+Visited 2366 million nodes
+Visited 2367 million nodes
+Visited 2368 million nodes
+Visited 2369 million nodes
+Visited 2370 million nodes
+Visited 2371 million nodes
+Visited 2372 million nodes
+Visited 2373 million nodes
+Visited 2374 million nodes
+Visited 2375 million nodes
+Visited 2376 million nodes
+    Nodes this clue = 45047707
+    Rejected
+Trying clue 230 of 256 at (6,11)    (2282 seconds)
+    Checking uniqueness...
+Visited 2377 million nodes
+Visited 2378 million nodes
+Visited 2379 million nodes
+Visited 2380 million nodes
+Visited 2381 million nodes
+Visited 2382 million nodes
+Visited 2383 million nodes
+Visited 2384 million nodes
+Visited 2385 million nodes
+Visited 2386 million nodes
+Visited 2387 million nodes
+Visited 2388 million nodes
+Visited 2389 million nodes
+Visited 2390 million nodes
+Visited 2391 million nodes
+Visited 2392 million nodes
+Visited 2393 million nodes
+Visited 2394 million nodes
+Visited 2395 million nodes
+Visited 2396 million nodes
+Visited 2397 million nodes
+Visited 2398 million nodes
+Visited 2399 million nodes
+Visited 2400 million nodes
+Visited 2401 million nodes
+Visited 2402 million nodes
+Visited 2403 million nodes
+Visited 2404 million nodes
+Visited 2405 million nodes
+Visited 2406 million nodes
+Visited 2407 million nodes
+Visited 2408 million nodes
+Visited 2409 million nodes
+Visited 2410 million nodes
+Visited 2411 million nodes
+Visited 2412 million nodes
+Visited 2413 million nodes
+Visited 2414 million nodes
+Visited 2415 million nodes
+Visited 2416 million nodes
+Visited 2417 million nodes
+    Nodes this clue = 40834393
+    Rejected
+Trying clue 231 of 256 at (8,14)    (2321 seconds)
+    Checking uniqueness...
+Visited 2418 million nodes
+Visited 2419 million nodes
+Visited 2420 million nodes
+Visited 2421 million nodes
+Visited 2422 million nodes
+Visited 2423 million nodes
+Visited 2424 million nodes
+Visited 2425 million nodes
+Visited 2426 million nodes
+Visited 2427 million nodes
+Visited 2428 million nodes
+Visited 2429 million nodes
+Visited 2430 million nodes
+Visited 2431 million nodes
+Visited 2432 million nodes
+Visited 2433 million nodes
+Visited 2434 million nodes
+Visited 2435 million nodes
+Visited 2436 million nodes
+Visited 2437 million nodes
+Visited 2438 million nodes
+Visited 2439 million nodes
+Visited 2440 million nodes
+Visited 2441 million nodes
+Visited 2442 million nodes
+Visited 2443 million nodes
+Visited 2444 million nodes
+Visited 2445 million nodes
+Visited 2446 million nodes
+Visited 2447 million nodes
+Visited 2448 million nodes
+Visited 2449 million nodes
+Visited 2450 million nodes
+Visited 2451 million nodes
+Visited 2452 million nodes
+Visited 2453 million nodes
+Visited 2454 million nodes
+Visited 2455 million nodes
+Visited 2456 million nodes
+Visited 2457 million nodes
+Visited 2458 million nodes
+Visited 2459 million nodes
+Visited 2460 million nodes
+Visited 2461 million nodes
+Visited 2462 million nodes
+Visited 2463 million nodes
+Visited 2464 million nodes
+    Nodes this clue = 46460607
+    Rejected
+Trying clue 232 of 256 at (11,4)    (2364 seconds)
+    Checking uniqueness...
+Visited 2465 million nodes
+Visited 2466 million nodes
+Visited 2467 million nodes
+Visited 2468 million nodes
+Visited 2469 million nodes
+Visited 2470 million nodes
+Visited 2471 million nodes
+Visited 2472 million nodes
+Visited 2473 million nodes
+Visited 2474 million nodes
+    Nodes this clue = 9884835
+    Rejected
+Trying clue 233 of 256 at (6,7)    (2372 seconds)
+    Checking uniqueness...
+Visited 2475 million nodes
+Visited 2476 million nodes
+Visited 2477 million nodes
+Visited 2478 million nodes
+Visited 2479 million nodes
+Visited 2480 million nodes
+Visited 2481 million nodes
+Visited 2482 million nodes
+Visited 2483 million nodes
+Visited 2484 million nodes
+Visited 2485 million nodes
+Visited 2486 million nodes
+Visited 2487 million nodes
+Visited 2488 million nodes
+Visited 2489 million nodes
+Visited 2490 million nodes
+Visited 2491 million nodes
+Visited 2492 million nodes
+Visited 2493 million nodes
+Visited 2494 million nodes
+Visited 2495 million nodes
+Visited 2496 million nodes
+Visited 2497 million nodes
+Visited 2498 million nodes
+Visited 2499 million nodes
+Visited 2500 million nodes
+Visited 2501 million nodes
+Visited 2502 million nodes
+Visited 2503 million nodes
+Visited 2504 million nodes
+Visited 2505 million nodes
+    Nodes this clue = 31412397
+    Rejected
+Trying clue 234 of 256 at (7,1)    (2402 seconds)
+    Checking uniqueness...
+Visited 2506 million nodes
+Visited 2507 million nodes
+Visited 2508 million nodes
+Visited 2509 million nodes
+Visited 2510 million nodes
+Visited 2511 million nodes
+Visited 2512 million nodes
+Visited 2513 million nodes
+Visited 2514 million nodes
+Visited 2515 million nodes
+Visited 2516 million nodes
+Visited 2517 million nodes
+Visited 2518 million nodes
+Visited 2519 million nodes
+Visited 2520 million nodes
+Visited 2521 million nodes
+Visited 2522 million nodes
+Visited 2523 million nodes
+Visited 2524 million nodes
+Visited 2525 million nodes
+Visited 2526 million nodes
+Visited 2527 million nodes
+Visited 2528 million nodes
+Visited 2529 million nodes
+Visited 2530 million nodes
+Visited 2531 million nodes
+Visited 2532 million nodes
+Visited 2533 million nodes
+Visited 2534 million nodes
+Visited 2535 million nodes
+Visited 2536 million nodes
+    Nodes this clue = 30929195
+    Rejected
+Trying clue 235 of 256 at (2,3)    (2430 seconds)
+    Checking uniqueness...
+Visited 2537 million nodes
+Visited 2538 million nodes
+Visited 2539 million nodes
+Visited 2540 million nodes
+Visited 2541 million nodes
+Visited 2542 million nodes
+Visited 2543 million nodes
+Visited 2544 million nodes
+Visited 2545 million nodes
+Visited 2546 million nodes
+Visited 2547 million nodes
+Visited 2548 million nodes
+Visited 2549 million nodes
+Visited 2550 million nodes
+Visited 2551 million nodes
+Visited 2552 million nodes
+Visited 2553 million nodes
+Visited 2554 million nodes
+Visited 2555 million nodes
+Visited 2556 million nodes
+Visited 2557 million nodes
+Visited 2558 million nodes
+Visited 2559 million nodes
+Visited 2560 million nodes
+Visited 2561 million nodes
+Visited 2562 million nodes
+Visited 2563 million nodes
+Visited 2564 million nodes
+Visited 2565 million nodes
+Visited 2566 million nodes
+Visited 2567 million nodes
+Visited 2568 million nodes
+Visited 2569 million nodes
+Visited 2570 million nodes
+Visited 2571 million nodes
+Visited 2572 million nodes
+Visited 2573 million nodes
+Visited 2574 million nodes
+Visited 2575 million nodes
+Visited 2576 million nodes
+Visited 2577 million nodes
+Visited 2578 million nodes
+Visited 2579 million nodes
+Visited 2580 million nodes
+Visited 2581 million nodes
+Visited 2582 million nodes
+Visited 2583 million nodes
+Visited 2584 million nodes
+Visited 2585 million nodes
+Visited 2586 million nodes
+Visited 2587 million nodes
+Visited 2588 million nodes
+Visited 2589 million nodes
+Visited 2590 million nodes
+Visited 2591 million nodes
+Visited 2592 million nodes
+Visited 2593 million nodes
+Visited 2594 million nodes
+Visited 2595 million nodes
+Visited 2596 million nodes
+Visited 2597 million nodes
+Visited 2598 million nodes
+Visited 2599 million nodes
+Visited 2600 million nodes
+Visited 2601 million nodes
+Visited 2602 million nodes
+Visited 2603 million nodes
+Visited 2604 million nodes
+Visited 2605 million nodes
+Visited 2606 million nodes
+Visited 2607 million nodes
+Visited 2608 million nodes
+Visited 2609 million nodes
+Visited 2610 million nodes
+Visited 2611 million nodes
+Visited 2612 million nodes
+Visited 2613 million nodes
+Visited 2614 million nodes
+Visited 2615 million nodes
+Visited 2616 million nodes
+Visited 2617 million nodes
+Visited 2618 million nodes
+Visited 2619 million nodes
+Visited 2620 million nodes
+Visited 2621 million nodes
+Visited 2622 million nodes
+Visited 2623 million nodes
+Visited 2624 million nodes
+Visited 2625 million nodes
+Visited 2626 million nodes
+Visited 2627 million nodes
+Visited 2628 million nodes
+Visited 2629 million nodes
+Visited 2630 million nodes
+Visited 2631 million nodes
+Visited 2632 million nodes
+Visited 2633 million nodes
+Visited 2634 million nodes
+Visited 2635 million nodes
+Visited 2636 million nodes
+Visited 2637 million nodes
+Visited 2638 million nodes
+Visited 2639 million nodes
+Visited 2640 million nodes
+Visited 2641 million nodes
+Visited 2642 million nodes
+Visited 2643 million nodes
+Visited 2644 million nodes
+Visited 2645 million nodes
+Visited 2646 million nodes
+Visited 2647 million nodes
+Visited 2648 million nodes
+Visited 2649 million nodes
+Visited 2650 million nodes
+Visited 2651 million nodes
+Visited 2652 million nodes
+Visited 2653 million nodes
+Visited 2654 million nodes
+Visited 2655 million nodes
+Visited 2656 million nodes
+Visited 2657 million nodes
+Visited 2658 million nodes
+Visited 2659 million nodes
+Visited 2660 million nodes
+Visited 2661 million nodes
+Visited 2662 million nodes
+Visited 2663 million nodes
+    Nodes this clue = 127273468
+    Rejected
+Trying clue 236 of 256 at (6,3)    (2546 seconds)
+    Checking uniqueness...
+Visited 2664 million nodes
+Visited 2665 million nodes
+Visited 2666 million nodes
+Visited 2667 million nodes
+Visited 2668 million nodes
+Visited 2669 million nodes
+Visited 2670 million nodes
+Visited 2671 million nodes
+Visited 2672 million nodes
+Visited 2673 million nodes
+Visited 2674 million nodes
+Visited 2675 million nodes
+Visited 2676 million nodes
+Visited 2677 million nodes
+Visited 2678 million nodes
+Visited 2679 million nodes
+Visited 2680 million nodes
+Visited 2681 million nodes
+Visited 2682 million nodes
+Visited 2683 million nodes
+Visited 2684 million nodes
+Visited 2685 million nodes
+Visited 2686 million nodes
+Visited 2687 million nodes
+    Nodes this clue = 23454451
+    Rejected
+Trying clue 237 of 256 at (3,10)    (2568 seconds)
+    Checking uniqueness...
+Visited 2688 million nodes
+Visited 2689 million nodes
+Visited 2690 million nodes
+Visited 2691 million nodes
+Visited 2692 million nodes
+Visited 2693 million nodes
+    Nodes this clue = 6055511
+    Rejected
+Trying clue 238 of 256 at (4,9)    (2575 seconds)
+    Checking uniqueness...
+Visited 2694 million nodes
+Visited 2695 million nodes
+Visited 2696 million nodes
+Visited 2697 million nodes
+Visited 2698 million nodes
+Visited 2699 million nodes
+Visited 2700 million nodes
+Visited 2701 million nodes
+Visited 2702 million nodes
+Visited 2703 million nodes
+Visited 2704 million nodes
+Visited 2705 million nodes
+Visited 2706 million nodes
+Visited 2707 million nodes
+Visited 2708 million nodes
+Visited 2709 million nodes
+Visited 2710 million nodes
+Visited 2711 million nodes
+Visited 2712 million nodes
+Visited 2713 million nodes
+Visited 2714 million nodes
+Visited 2715 million nodes
+Visited 2716 million nodes
+Visited 2717 million nodes
+Visited 2718 million nodes
+Visited 2719 million nodes
+Visited 2720 million nodes
+Visited 2721 million nodes
+Visited 2722 million nodes
+Visited 2723 million nodes
+Visited 2724 million nodes
+Visited 2725 million nodes
+Visited 2726 million nodes
+Visited 2727 million nodes
+Visited 2728 million nodes
+Visited 2729 million nodes
+Visited 2730 million nodes
+Visited 2731 million nodes
+Visited 2732 million nodes
+Visited 2733 million nodes
+Visited 2734 million nodes
+Visited 2735 million nodes
+Visited 2736 million nodes
+Visited 2737 million nodes
+Visited 2738 million nodes
+Visited 2739 million nodes
+Visited 2740 million nodes
+Visited 2741 million nodes
+Visited 2742 million nodes
+Visited 2743 million nodes
+    Nodes this clue = 50665590
+    Rejected
+Trying clue 239 of 256 at (11,6)    (2618 seconds)
+    Checking uniqueness...
+Visited 2744 million nodes
+Visited 2745 million nodes
+Visited 2746 million nodes
+Visited 2747 million nodes
+Visited 2748 million nodes
+Visited 2749 million nodes
+Visited 2750 million nodes
+Visited 2751 million nodes
+Visited 2752 million nodes
+Visited 2753 million nodes
+Visited 2754 million nodes
+Visited 2755 million nodes
+Visited 2756 million nodes
+Visited 2757 million nodes
+Visited 2758 million nodes
+Visited 2759 million nodes
+Visited 2760 million nodes
+Visited 2761 million nodes
+Visited 2762 million nodes
+Visited 2763 million nodes
+Visited 2764 million nodes
+Visited 2765 million nodes
+Visited 2766 million nodes
+Visited 2767 million nodes
+Visited 2768 million nodes
+Visited 2769 million nodes
+Visited 2770 million nodes
+Visited 2771 million nodes
+Visited 2772 million nodes
+Visited 2773 million nodes
+Visited 2774 million nodes
+Visited 2775 million nodes
+Visited 2776 million nodes
+Visited 2777 million nodes
+Visited 2778 million nodes
+Visited 2779 million nodes
+Visited 2780 million nodes
+Visited 2781 million nodes
+Visited 2782 million nodes
+Visited 2783 million nodes
+    Nodes this clue = 39442776
+    Rejected
+Trying clue 240 of 256 at (11,3)    (2651 seconds)
+    Checking uniqueness...
+Visited 2784 million nodes
+Visited 2785 million nodes
+Visited 2786 million nodes
+Visited 2787 million nodes
+Visited 2788 million nodes
+Visited 2789 million nodes
+Visited 2790 million nodes
+Visited 2791 million nodes
+Visited 2792 million nodes
+Visited 2793 million nodes
+Visited 2794 million nodes
+Visited 2795 million nodes
+Visited 2796 million nodes
+Visited 2797 million nodes
+Visited 2798 million nodes
+Visited 2799 million nodes
+Visited 2800 million nodes
+    Nodes this clue = 16838497
+    Rejected
+Trying clue 241 of 256 at (9,12)    (2667 seconds)
+    Checking uniqueness...
+Visited 2801 million nodes
+Visited 2802 million nodes
+Visited 2803 million nodes
+Visited 2804 million nodes
+Visited 2805 million nodes
+Visited 2806 million nodes
+Visited 2807 million nodes
+Visited 2808 million nodes
+Visited 2809 million nodes
+Visited 2810 million nodes
+Visited 2811 million nodes
+Visited 2812 million nodes
+Visited 2813 million nodes
+Visited 2814 million nodes
+Visited 2815 million nodes
+Visited 2816 million nodes
+Visited 2817 million nodes
+Visited 2818 million nodes
+Visited 2819 million nodes
+Visited 2820 million nodes
+Visited 2821 million nodes
+Visited 2822 million nodes
+Visited 2823 million nodes
+Visited 2824 million nodes
+Visited 2825 million nodes
+Visited 2826 million nodes
+    Nodes this clue = 26430779
+    Rejected
+Trying clue 242 of 256 at (5,7)    (2692 seconds)
+    Checking uniqueness...
+Visited 2827 million nodes
+Visited 2828 million nodes
+Visited 2829 million nodes
+Visited 2830 million nodes
+Visited 2831 million nodes
+    Nodes this clue = 4537468
+    Rejected
+Trying clue 243 of 256 at (11,8)    (2697 seconds)
+    Checking uniqueness...
+Visited 2832 million nodes
+Visited 2833 million nodes
+Visited 2834 million nodes
+Visited 2835 million nodes
+Visited 2836 million nodes
+Visited 2837 million nodes
+Visited 2838 million nodes
+Visited 2839 million nodes
+Visited 2840 million nodes
+Visited 2841 million nodes
+Visited 2842 million nodes
+Visited 2843 million nodes
+Visited 2844 million nodes
+Visited 2845 million nodes
+Visited 2846 million nodes
+Visited 2847 million nodes
+Visited 2848 million nodes
+Visited 2849 million nodes
+Visited 2850 million nodes
+Visited 2851 million nodes
+Visited 2852 million nodes
+Visited 2853 million nodes
+Visited 2854 million nodes
+Visited 2855 million nodes
+Visited 2856 million nodes
+Visited 2857 million nodes
+Visited 2858 million nodes
+Visited 2859 million nodes
+Visited 2860 million nodes
+    Nodes this clue = 29131966
+    Rejected
+Trying clue 244 of 256 at (8,4)    (2727 seconds)
+    Checking uniqueness...
+Visited 2861 million nodes
+Visited 2862 million nodes
+Visited 2863 million nodes
+Visited 2864 million nodes
+Visited 2865 million nodes
+Visited 2866 million nodes
+Visited 2867 million nodes
+Visited 2868 million nodes
+Visited 2869 million nodes
+Visited 2870 million nodes
+Visited 2871 million nodes
+Visited 2872 million nodes
+Visited 2873 million nodes
+Visited 2874 million nodes
+Visited 2875 million nodes
+Visited 2876 million nodes
+Visited 2877 million nodes
+Visited 2878 million nodes
+Visited 2879 million nodes
+Visited 2880 million nodes
+Visited 2881 million nodes
+Visited 2882 million nodes
+Visited 2883 million nodes
+Visited 2884 million nodes
+Visited 2885 million nodes
+Visited 2886 million nodes
+Visited 2887 million nodes
+Visited 2888 million nodes
+Visited 2889 million nodes
+Visited 2890 million nodes
+Visited 2891 million nodes
+Visited 2892 million nodes
+Visited 2893 million nodes
+Visited 2894 million nodes
+Visited 2895 million nodes
+Visited 2896 million nodes
+Visited 2897 million nodes
+Visited 2898 million nodes
+Visited 2899 million nodes
+Visited 2900 million nodes
+    Nodes this clue = 39702725
+    Rejected
+Trying clue 245 of 256 at (8,7)    (2764 seconds)
+    Checking uniqueness...
+Visited 2901 million nodes
+Visited 2902 million nodes
+Visited 2903 million nodes
+Visited 2904 million nodes
+Visited 2905 million nodes
+Visited 2906 million nodes
+Visited 2907 million nodes
+Visited 2908 million nodes
+Visited 2909 million nodes
+Visited 2910 million nodes
+Visited 2911 million nodes
+Visited 2912 million nodes
+Visited 2913 million nodes
+Visited 2914 million nodes
+Visited 2915 million nodes
+Visited 2916 million nodes
+Visited 2917 million nodes
+Visited 2918 million nodes
+Visited 2919 million nodes
+Visited 2920 million nodes
+Visited 2921 million nodes
+Visited 2922 million nodes
+Visited 2923 million nodes
+Visited 2924 million nodes
+Visited 2925 million nodes
+Visited 2926 million nodes
+Visited 2927 million nodes
+Visited 2928 million nodes
+Visited 2929 million nodes
+Visited 2930 million nodes
+Visited 2931 million nodes
+Visited 2932 million nodes
+Visited 2933 million nodes
+Visited 2934 million nodes
+Visited 2935 million nodes
+Visited 2936 million nodes
+Visited 2937 million nodes
+Visited 2938 million nodes
+Visited 2939 million nodes
+Visited 2940 million nodes
+Visited 2941 million nodes
+Visited 2942 million nodes
+Visited 2943 million nodes
+Visited 2944 million nodes
+Visited 2945 million nodes
+Visited 2946 million nodes
+Visited 2947 million nodes
+Visited 2948 million nodes
+Visited 2949 million nodes
+Visited 2950 million nodes
+Visited 2951 million nodes
+Visited 2952 million nodes
+Visited 2953 million nodes
+Visited 2954 million nodes
+Visited 2955 million nodes
+Visited 2956 million nodes
+Visited 2957 million nodes
+Visited 2958 million nodes
+Visited 2959 million nodes
+Visited 2960 million nodes
+Visited 2961 million nodes
+Visited 2962 million nodes
+Visited 2963 million nodes
+Visited 2964 million nodes
+Visited 2965 million nodes
+Visited 2966 million nodes
+Visited 2967 million nodes
+Visited 2968 million nodes
+Visited 2969 million nodes
+Visited 2970 million nodes
+Visited 2971 million nodes
+Visited 2972 million nodes
+Visited 2973 million nodes
+Visited 2974 million nodes
+Visited 2975 million nodes
+Visited 2976 million nodes
+Visited 2977 million nodes
+Visited 2978 million nodes
+Visited 2979 million nodes
+Visited 2980 million nodes
+Visited 2981 million nodes
+Visited 2982 million nodes
+Visited 2983 million nodes
+Visited 2984 million nodes
+Visited 2985 million nodes
+Visited 2986 million nodes
+Visited 2987 million nodes
+Visited 2988 million nodes
+Visited 2989 million nodes
+Visited 2990 million nodes
+Visited 2991 million nodes
+Visited 2992 million nodes
+Visited 2993 million nodes
+Visited 2994 million nodes
+Visited 2995 million nodes
+Visited 2996 million nodes
+Visited 2997 million nodes
+Visited 2998 million nodes
+Visited 2999 million nodes
+Visited 3000 million nodes
+Visited 3001 million nodes
+Visited 3002 million nodes
+Visited 3003 million nodes
+Visited 3004 million nodes
+Visited 3005 million nodes
+Visited 3006 million nodes
+Visited 3007 million nodes
+Visited 3008 million nodes
+Visited 3009 million nodes
+Visited 3010 million nodes
+Visited 3011 million nodes
+Visited 3012 million nodes
+Visited 3013 million nodes
+Visited 3014 million nodes
+Visited 3015 million nodes
+Visited 3016 million nodes
+Visited 3017 million nodes
+Visited 3018 million nodes
+Visited 3019 million nodes
+Visited 3020 million nodes
+Visited 3021 million nodes
+    Nodes this clue = 121896817
+    Rejected
+Trying clue 246 of 256 at (8,6)    (2878 seconds)
+    Checking uniqueness...
+Visited 3022 million nodes
+Visited 3023 million nodes
+Visited 3024 million nodes
+Visited 3025 million nodes
+Visited 3026 million nodes
+Visited 3027 million nodes
+Visited 3028 million nodes
+Visited 3029 million nodes
+Visited 3030 million nodes
+Visited 3031 million nodes
+Visited 3032 million nodes
+Visited 3033 million nodes
+Visited 3034 million nodes
+Visited 3035 million nodes
+Visited 3036 million nodes
+Visited 3037 million nodes
+Visited 3038 million nodes
+Visited 3039 million nodes
+Visited 3040 million nodes
+Visited 3041 million nodes
+Visited 3042 million nodes
+Visited 3043 million nodes
+Visited 3044 million nodes
+Visited 3045 million nodes
+Visited 3046 million nodes
+Visited 3047 million nodes
+Visited 3048 million nodes
+Visited 3049 million nodes
+Visited 3050 million nodes
+Visited 3051 million nodes
+Visited 3052 million nodes
+Visited 3053 million nodes
+Visited 3054 million nodes
+Visited 3055 million nodes
+Visited 3056 million nodes
+Visited 3057 million nodes
+Visited 3058 million nodes
+Visited 3059 million nodes
+Visited 3060 million nodes
+Visited 3061 million nodes
+Visited 3062 million nodes
+Visited 3063 million nodes
+Visited 3064 million nodes
+Visited 3065 million nodes
+Visited 3066 million nodes
+Visited 3067 million nodes
+Visited 3068 million nodes
+Visited 3069 million nodes
+Visited 3070 million nodes
+Visited 3071 million nodes
+Visited 3072 million nodes
+Visited 3073 million nodes
+Visited 3074 million nodes
+    Nodes this clue = 52895803
+    Rejected
+Trying clue 247 of 256 at (14,7)    (2924 seconds)
+    Checking uniqueness...
+Visited 3075 million nodes
+Visited 3076 million nodes
+Visited 3077 million nodes
+Visited 3078 million nodes
+Visited 3079 million nodes
+Visited 3080 million nodes
+Visited 3081 million nodes
+Visited 3082 million nodes
+    Nodes this clue = 7668594
+    Rejected
+Trying clue 248 of 256 at (4,8)    (2932 seconds)
+    Checking uniqueness...
+Visited 3083 million nodes
+Visited 3084 million nodes
+Visited 3085 million nodes
+Visited 3086 million nodes
+Visited 3087 million nodes
+Visited 3088 million nodes
+Visited 3089 million nodes
+Visited 3090 million nodes
+Visited 3091 million nodes
+Visited 3092 million nodes
+Visited 3093 million nodes
+Visited 3094 million nodes
+Visited 3095 million nodes
+Visited 3096 million nodes
+Visited 3097 million nodes
+Visited 3098 million nodes
+Visited 3099 million nodes
+    Nodes this clue = 16531708
+    Rejected
+Trying clue 249 of 256 at (12,0)    (2950 seconds)
+    Checking uniqueness...
+Visited 3100 million nodes
+Visited 3101 million nodes
+Visited 3102 million nodes
+Visited 3103 million nodes
+    Nodes this clue = 4810474
+    Rejected
+Trying clue 250 of 256 at (10,5)    (2954 seconds)
+    Checking uniqueness...
+Visited 3104 million nodes
+Visited 3105 million nodes
+Visited 3106 million nodes
+Visited 3107 million nodes
+Visited 3108 million nodes
+Visited 3109 million nodes
+Visited 3110 million nodes
+Visited 3111 million nodes
+Visited 3112 million nodes
+Visited 3113 million nodes
+Visited 3114 million nodes
+Visited 3115 million nodes
+Visited 3116 million nodes
+Visited 3117 million nodes
+Visited 3118 million nodes
+Visited 3119 million nodes
+Visited 3120 million nodes
+Visited 3121 million nodes
+Visited 3122 million nodes
+Visited 3123 million nodes
+Visited 3124 million nodes
+Visited 3125 million nodes
+Visited 3126 million nodes
+Visited 3127 million nodes
+Visited 3128 million nodes
+Visited 3129 million nodes
+Visited 3130 million nodes
+Visited 3131 million nodes
+Visited 3132 million nodes
+Visited 3133 million nodes
+Visited 3134 million nodes
+Visited 3135 million nodes
+Visited 3136 million nodes
+    Nodes this clue = 33022617
+    Rejected
+Trying clue 251 of 256 at (12,15)    (2985 seconds)
+    Checking uniqueness...
+Visited 3137 million nodes
+Visited 3138 million nodes
+Visited 3139 million nodes
+Visited 3140 million nodes
+Visited 3141 million nodes
+Visited 3142 million nodes
+Visited 3143 million nodes
+Visited 3144 million nodes
+Visited 3145 million nodes
+Visited 3146 million nodes
+Visited 3147 million nodes
+Visited 3148 million nodes
+Visited 3149 million nodes
+Visited 3150 million nodes
+Visited 3151 million nodes
+Visited 3152 million nodes
+Visited 3153 million nodes
+Visited 3154 million nodes
+Visited 3155 million nodes
+Visited 3156 million nodes
+Visited 3157 million nodes
+Visited 3158 million nodes
+Visited 3159 million nodes
+Visited 3160 million nodes
+Visited 3161 million nodes
+Visited 3162 million nodes
+Visited 3163 million nodes
+Visited 3164 million nodes
+Visited 3165 million nodes
+Visited 3166 million nodes
+    Nodes this clue = 29415098
+    Rejected
+Trying clue 252 of 256 at (2,12)    (3017 seconds)
+    Checking uniqueness...
+Visited 3167 million nodes
+Visited 3168 million nodes
+Visited 3169 million nodes
+Visited 3170 million nodes
+Visited 3171 million nodes
+Visited 3172 million nodes
+Visited 3173 million nodes
+Visited 3174 million nodes
+Visited 3175 million nodes
+Visited 3176 million nodes
+Visited 3177 million nodes
+Visited 3178 million nodes
+Visited 3179 million nodes
+Visited 3180 million nodes
+Visited 3181 million nodes
+Visited 3182 million nodes
+Visited 3183 million nodes
+Visited 3184 million nodes
+Visited 3185 million nodes
+Visited 3186 million nodes
+Visited 3187 million nodes
+Visited 3188 million nodes
+Visited 3189 million nodes
+Visited 3190 million nodes
+Visited 3191 million nodes
+Visited 3192 million nodes
+Visited 3193 million nodes
+Visited 3194 million nodes
+Visited 3195 million nodes
+Visited 3196 million nodes
+Visited 3197 million nodes
+Visited 3198 million nodes
+Visited 3199 million nodes
+Visited 3200 million nodes
+Visited 3201 million nodes
+Visited 3202 million nodes
+Visited 3203 million nodes
+Visited 3204 million nodes
+Visited 3205 million nodes
+Visited 3206 million nodes
+Visited 3207 million nodes
+Visited 3208 million nodes
+Visited 3209 million nodes
+Visited 3210 million nodes
+Visited 3211 million nodes
+Visited 3212 million nodes
+Visited 3213 million nodes
+Visited 3214 million nodes
+Visited 3215 million nodes
+Visited 3216 million nodes
+Visited 3217 million nodes
+Visited 3218 million nodes
+Visited 3219 million nodes
+Visited 3220 million nodes
+Visited 3221 million nodes
+Visited 3222 million nodes
+Visited 3223 million nodes
+Visited 3224 million nodes
+Visited 3225 million nodes
+Visited 3226 million nodes
+Visited 3227 million nodes
+Visited 3228 million nodes
+Visited 3229 million nodes
+Visited 3230 million nodes
+Visited 3231 million nodes
+Visited 3232 million nodes
+Visited 3233 million nodes
+Visited 3234 million nodes
+Visited 3235 million nodes
+Visited 3236 million nodes
+Visited 3237 million nodes
+Visited 3238 million nodes
+Visited 3239 million nodes
+Visited 3240 million nodes
+Visited 3241 million nodes
+Visited 3242 million nodes
+Visited 3243 million nodes
+Visited 3244 million nodes
+Visited 3245 million nodes
+Visited 3246 million nodes
+Visited 3247 million nodes
+Visited 3248 million nodes
+Visited 3249 million nodes
+Visited 3250 million nodes
+Visited 3251 million nodes
+Visited 3252 million nodes
+Visited 3253 million nodes
+Visited 3254 million nodes
+Visited 3255 million nodes
+Visited 3256 million nodes
+Visited 3257 million nodes
+Visited 3258 million nodes
+Visited 3259 million nodes
+Visited 3260 million nodes
+Visited 3261 million nodes
+Visited 3262 million nodes
+Visited 3263 million nodes
+Visited 3264 million nodes
+Visited 3265 million nodes
+Visited 3266 million nodes
+Visited 3267 million nodes
+Visited 3268 million nodes
+Visited 3269 million nodes
+Visited 3270 million nodes
+Visited 3271 million nodes
+Visited 3272 million nodes
+Visited 3273 million nodes
+Visited 3274 million nodes
+Visited 3275 million nodes
+Visited 3276 million nodes
+Visited 3277 million nodes
+Visited 3278 million nodes
+Visited 3279 million nodes
+Visited 3280 million nodes
+Visited 3281 million nodes
+Visited 3282 million nodes
+Visited 3283 million nodes
+Visited 3284 million nodes
+Visited 3285 million nodes
+Visited 3286 million nodes
+Visited 3287 million nodes
+Visited 3288 million nodes
+Visited 3289 million nodes
+Visited 3290 million nodes
+Visited 3291 million nodes
+Visited 3292 million nodes
+    Nodes this clue = 126445603
+    Rejected
+Trying clue 253 of 256 at (3,0)    (3156 seconds)
+    Checking uniqueness...
+Visited 3293 million nodes
+Visited 3294 million nodes
+Visited 3295 million nodes
+Visited 3296 million nodes
+Visited 3297 million nodes
+Visited 3298 million nodes
+Visited 3299 million nodes
+Visited 3300 million nodes
+Visited 3301 million nodes
+Visited 3302 million nodes
+Visited 3303 million nodes
+Visited 3304 million nodes
+Visited 3305 million nodes
+Visited 3306 million nodes
+Visited 3307 million nodes
+Visited 3308 million nodes
+Visited 3309 million nodes
+Visited 3310 million nodes
+Visited 3311 million nodes
+Visited 3312 million nodes
+Visited 3313 million nodes
+Visited 3314 million nodes
+Visited 3315 million nodes
+Visited 3316 million nodes
+Visited 3317 million nodes
+Visited 3318 million nodes
+Visited 3319 million nodes
+Visited 3320 million nodes
+Visited 3321 million nodes
+Visited 3322 million nodes
+Visited 3323 million nodes
+Visited 3324 million nodes
+Visited 3325 million nodes
+Visited 3326 million nodes
+Visited 3327 million nodes
+Visited 3328 million nodes
+Visited 3329 million nodes
+Visited 3330 million nodes
+Visited 3331 million nodes
+Visited 3332 million nodes
+Visited 3333 million nodes
+Visited 3334 million nodes
+Visited 3335 million nodes
+Visited 3336 million nodes
+Visited 3337 million nodes
+Visited 3338 million nodes
+Visited 3339 million nodes
+Visited 3340 million nodes
+Visited 3341 million nodes
+Visited 3342 million nodes
+Visited 3343 million nodes
+Visited 3344 million nodes
+Visited 3345 million nodes
+Visited 3346 million nodes
+Visited 3347 million nodes
+Visited 3348 million nodes
+Visited 3349 million nodes
+Visited 3350 million nodes
+Visited 3351 million nodes
+Visited 3352 million nodes
+Visited 3353 million nodes
+Visited 3354 million nodes
+Visited 3355 million nodes
+Visited 3356 million nodes
+Visited 3357 million nodes
+    Nodes this clue = 65069829
+    Rejected
+Trying clue 254 of 256 at (10,8)    (3227 seconds)
+    Checking uniqueness...
+Visited 3358 million nodes
+Visited 3359 million nodes
+Visited 3360 million nodes
+Visited 3361 million nodes
+Visited 3362 million nodes
+Visited 3363 million nodes
+Visited 3364 million nodes
+Visited 3365 million nodes
+Visited 3366 million nodes
+Visited 3367 million nodes
+Visited 3368 million nodes
+Visited 3369 million nodes
+Visited 3370 million nodes
+Visited 3371 million nodes
+Visited 3372 million nodes
+Visited 3373 million nodes
+Visited 3374 million nodes
+Visited 3375 million nodes
+Visited 3376 million nodes
+Visited 3377 million nodes
+Visited 3378 million nodes
+Visited 3379 million nodes
+Visited 3380 million nodes
+Visited 3381 million nodes
+Visited 3382 million nodes
+Visited 3383 million nodes
+Visited 3384 million nodes
+Visited 3385 million nodes
+Visited 3386 million nodes
+Visited 3387 million nodes
+Visited 3388 million nodes
+Visited 3389 million nodes
+Visited 3390 million nodes
+Visited 3391 million nodes
+Visited 3392 million nodes
+Visited 3393 million nodes
+Visited 3394 million nodes
+Visited 3395 million nodes
+Visited 3396 million nodes
+Visited 3397 million nodes
+Visited 3398 million nodes
+Visited 3399 million nodes
+Visited 3400 million nodes
+Visited 3401 million nodes
+Visited 3402 million nodes
+Visited 3403 million nodes
+Visited 3404 million nodes
+Visited 3405 million nodes
+Visited 3406 million nodes
+Visited 3407 million nodes
+Visited 3408 million nodes
+Visited 3409 million nodes
+Visited 3410 million nodes
+Visited 3411 million nodes
+Visited 3412 million nodes
+Visited 3413 million nodes
+Visited 3414 million nodes
+Visited 3415 million nodes
+Visited 3416 million nodes
+Visited 3417 million nodes
+Visited 3418 million nodes
+Visited 3419 million nodes
+Visited 3420 million nodes
+Visited 3421 million nodes
+Visited 3422 million nodes
+Visited 3423 million nodes
+Visited 3424 million nodes
+Visited 3425 million nodes
+Visited 3426 million nodes
+Visited 3427 million nodes
+Visited 3428 million nodes
+Visited 3429 million nodes
+Visited 3430 million nodes
+Visited 3431 million nodes
+Visited 3432 million nodes
+Visited 3433 million nodes
+Visited 3434 million nodes
+Visited 3435 million nodes
+Visited 3436 million nodes
+Visited 3437 million nodes
+Visited 3438 million nodes
+Visited 3439 million nodes
+Visited 3440 million nodes
+Visited 3441 million nodes
+Visited 3442 million nodes
+Visited 3443 million nodes
+Visited 3444 million nodes
+Visited 3445 million nodes
+Visited 3446 million nodes
+Visited 3447 million nodes
+Visited 3448 million nodes
+Visited 3449 million nodes
+Visited 3450 million nodes
+Visited 3451 million nodes
+Visited 3452 million nodes
+Visited 3453 million nodes
+Visited 3454 million nodes
+Visited 3455 million nodes
+Visited 3456 million nodes
+Visited 3457 million nodes
+Visited 3458 million nodes
+Visited 3459 million nodes
+Visited 3460 million nodes
+Visited 3461 million nodes
+Visited 3462 million nodes
+Visited 3463 million nodes
+Visited 3464 million nodes
+Visited 3465 million nodes
+Visited 3466 million nodes
+Visited 3467 million nodes
+Visited 3468 million nodes
+Visited 3469 million nodes
+Visited 3470 million nodes
+Visited 3471 million nodes
+Visited 3472 million nodes
+Visited 3473 million nodes
+Visited 3474 million nodes
+Visited 3475 million nodes
+Visited 3476 million nodes
+Visited 3477 million nodes
+Visited 3478 million nodes
+Visited 3479 million nodes
+Visited 3480 million nodes
+Visited 3481 million nodes
+Visited 3482 million nodes
+Visited 3483 million nodes
+Visited 3484 million nodes
+Visited 3485 million nodes
+Visited 3486 million nodes
+Visited 3487 million nodes
+Visited 3488 million nodes
+Visited 3489 million nodes
+Visited 3490 million nodes
+Visited 3491 million nodes
+Visited 3492 million nodes
+Visited 3493 million nodes
+Visited 3494 million nodes
+Visited 3495 million nodes
+Visited 3496 million nodes
+    Nodes this clue = 138499313
+    Rejected
+Trying clue 255 of 256 at (12,3)    (3376 seconds)
+    Checking uniqueness...
+Visited 3497 million nodes
+Visited 3498 million nodes
+Visited 3499 million nodes
+Visited 3500 million nodes
+Visited 3501 million nodes
+Visited 3502 million nodes
+Visited 3503 million nodes
+Visited 3504 million nodes
+Visited 3505 million nodes
+    Nodes this clue = 8761399
+    Rejected
+Trying clue 256 of 256 at (12,12)    (3384 seconds)
+    Checking uniqueness...
+Visited 3506 million nodes
+Visited 3507 million nodes
+Visited 3508 million nodes
+Visited 3509 million nodes
+Visited 3510 million nodes
+Visited 3511 million nodes
+Visited 3512 million nodes
+Visited 3513 million nodes
+Visited 3514 million nodes
+Visited 3515 million nodes
+Visited 3516 million nodes
+Visited 3517 million nodes
+Visited 3518 million nodes
+Visited 3519 million nodes
+Visited 3520 million nodes
+Visited 3521 million nodes
+Visited 3522 million nodes
+Visited 3523 million nodes
+Visited 3524 million nodes
+Visited 3525 million nodes
+    Nodes this clue = 20848277
+    Rejected
+Successfully removed 160 clues
+Total recursive nodes visited = 3525907738

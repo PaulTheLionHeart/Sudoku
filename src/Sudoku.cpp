@@ -5,6 +5,37 @@
 
 #include "resource.h"
 #include "sudoku.h"
+#include "generate.h"
+
+/*-----------------------------------------
+      Sudoku.cpp
+
+      Main application module.
+
+      Responsible for:
+
+	  • application startup
+	  • message loop
+	  • menu commands
+	  • dialog creation
+	  • dispatching commands to the
+	    Sudoku engine and display modules.
+
+	WinMain()
+            Create the application window.
+
+        WndProc()
+            Handles menus and keyboard commands.
+
+        DisplayDlg()
+            Interactive Sudoku editor and solver.
+
+        AboutBoxDlg()
+            Version information.
+
+        ChooseValueDlg()
+            Numeric/hexadecimal value picker.
+  -----------------------------------------*/
 
 HWND	GlobalHwnd;
 
@@ -35,6 +66,7 @@ DWORD		dwStyle = WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MAXIMIZEBOX | WS_M
 int		AppIndex;
 static	char    *lpText ;
 static	short	nNumLines;
+GenerateOptions GenOptions;
 
 /*-----------------------------------------
 	Main Windows Entry Point
@@ -81,18 +113,6 @@ int PASCAL WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdL
      return (int)msg.wParam;
      }
 
-/*-----------------------------------------
-	Just a quicky
-  -----------------------------------------*/
-
-void DoCaption (HWND hwnd, char *szTitleName)
-     {
-     char szCaption [255];
-
-     sprintf_s(szCaption, sizeof(szCaption), "%s", szTitleName);
-     SetWindowText (hwnd, szCaption);
-     }
-     
 /*-----------------------------------------
 	Draw Opening Bitmap
   -----------------------------------------*/
@@ -155,6 +175,7 @@ WNDPROC CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	    ArraySize = (IsHEX) ? HEXARRAYSIZE : NORMALARRAYSIZE;		// dimension array indexing
 	    SquareSize = (IsHEX) ? HEXSQUARESIZE : NORMALSQUARESIZE;
 	    init_arrays();
+	    srand((unsigned)time(NULL));
 	    return 0;
 
 	case WM_INITMENUPOPUP:
@@ -177,10 +198,14 @@ WNDPROC CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	       switch (wParam)
 		    {
 		    case IDM_SELECT_MODE:    
-			IsHEX = (MessageBox (hwnd, "Run in HEX mode (16 by 16 Sudoku)?", szAppName, MB_ICONQUESTION | MB_YESNO | MB_DEFBUTTON2) == IDYES);
-			ArraySize = (IsHEX) ? HEXARRAYSIZE : NORMALARRAYSIZE;		// dimension array indexing
-			SquareSize = (IsHEX) ? HEXSQUARESIZE : NORMALSQUARESIZE;
-			init_arrays();
+			SetSudokuMode(MessageBox(hwnd, "Run in HEX mode (16 by 16 Sudoku)?", szAppName,	MB_ICONQUESTION | MB_YESNO | MB_DEFBUTTON2) == IDYES);
+			return 0;
+
+		    case IDM_GENERATESUDOKU:
+			if (DialogBoxParam(hInst, "GenerateDlg", hwnd, GenerateDlg, (LPARAM)&GenOptions) == IDOK)
+			    {
+			    SendMessage(hwnd, WM_COMMAND, IDM_SELECTSUDOKU, 0L);
+			    }
 			return 0;
 
 		    case IDM_EXIT:
@@ -195,6 +220,13 @@ WNDPROC CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			result = ShowSudokuDialog(hInst, hwnd, DisplayDlg);
 			switch (result)
 			    {
+			    // Return values :
+			    // IMPASSE - Puzzle cannot be solved.
+			    // REFRESH - Redisplay the current puzzle.
+			    // FINISH - User finished normally.
+			    // CANCEL - User cancelled the dialog.
+			    // CALCULATE - solve the puzzle
+
 			    case IMPASSE:
 				MessageBox(hwnd, "Impasse reached. Sudoku is not solvable", "Sudoku", MB_ICONEXCLAMATION | MB_OK);
 				return 0;
@@ -202,6 +234,7 @@ WNDPROC CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 				SendMessage (hwnd, WM_COMMAND, IDM_SELECTSUDOKU, 0L);
 				return 0;
 			    case FINISH:
+			    case CANCEL:
 				return 0;
 			    case CALCULATE:
 				result1 = ShowSudokuDialog(hInst, hwnd, DisplayDlg);
@@ -262,11 +295,15 @@ WNDPROC CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
                 case 'S': 
 		     SendMessage (hwnd, WM_COMMAND, IDM_SELECT_MODE, 0L);
                      break;
-                case 'c':						// Select Constant to display
-                case 'C': 
-		     SendMessage (hwnd, WM_COMMAND, IDM_SELECTSUDOKU, 0L);
-                     break;
-                case 'o':						// open file  
+		case 'c':						// Select Constant to display
+		case 'C':
+		    SendMessage(hwnd, WM_COMMAND, IDM_SELECTSUDOKU, 0L);
+		    break;
+		case 'g':						// Generate new sudoku
+		case 'G':
+		    SendMessage(hwnd, WM_COMMAND, IDM_GENERATESUDOKU, 0L);
+		    break;
+		case 'o':						// open file  
                 case 'O': 
 		     SendMessage (hwnd, WM_COMMAND, IDM_OPEN, 0L);
                      break;
@@ -542,7 +579,7 @@ INT_PTR CALLBACK    DisplayDlg (HWND hDlg, UINT message, WPARAM wParam, LPARAM l
 	     switch (CommandNumber)
 		 {
 		 case IDCANCEL:
-		     EndDialog(hDlg, IDCANCEL);
+		     EndDialog(hDlg, CANCEL);
 		     return TRUE;
 
 		 case IDC_FINISH:
@@ -564,7 +601,7 @@ INT_PTR CALLBACK    DisplayDlg (HWND hDlg, UINT message, WPARAM wParam, LPARAM l
 
 		 case IDOK:
 		 case IDC_CALCULATE:      // or IDOK if that's what the button uses
-		     if (solve_sudoku() < 0)
+		     if (!SolvePuzzle())
 			 {
 			 EndDialog(hDlg, IMPASSE);
 			 }

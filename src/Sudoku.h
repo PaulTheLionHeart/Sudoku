@@ -9,14 +9,25 @@
 
 #pragma once
 
+// Return values :
+// IMPASSE - Puzzle cannot be solved.
+// REFRESH - Redisplay the current puzzle.
+// FINISH - User finished normally.
+// CANCEL - User cancelled the dialog.
+// CALCULATE - solve the puzzle
+
 #define REFRESH                             10
 #define FINISH                              11
 #define CALCULATE                           12
 #define IMPASSE                             13
+#define CANCEL				    14
+
 #define NORMALARRAYSIZE			    9
 #define HEXARRAYSIZE			    16
 #define NORMALSQUARESIZE		    3
 #define HEXSQUARESIZE			    4
+#define MAXARRAYSIZE			    HEXARRAYSIZE
+#define MAXCELLS			    (MAXARRAYSIZE * MAXARRAYSIZE)
 
 #define RWIDTH(rect) (rect.right - rect.left)	// IB 2009-04-14
 #define RHEIGHT(rect) (rect.bottom - rect.top)
@@ -43,7 +54,8 @@ extern	void	PlaceValue(HWND hDlg, int row, int col, int value);
 extern	void	PaintHexCandidates(HWND hDlg, HDC hdc, int row, int col);
 extern	void	RefreshCell(HWND hDlg, int row, int col);
 extern	void	SelectCell(HWND hDlg, int row, int col);
-extern	void ToggleOriginal(HWND hDlg, int row, int col);
+extern	void	ToggleOriginal(HWND hDlg, int row, int col);
+extern	void	SetSudokuMode(BOOL IsHex);
 
 extern	int	ArraySize, SquareSize;				// ArraySize is the size of the side of the puzzle, SquareSize is the size of the side of a square
 extern	BOOL	IsHEX;						// default is 9*9 Sudoku
@@ -67,16 +79,17 @@ extern	int bits[HEXARRAYSIZE + 1];				// // An array with some powers of 2 to av
 
 extern	BOOL	IsOrig;						// Save the original puzzle
 
+#define USE_MRV_SOLVER		1
+
 // stuff from SudokuEngine.cpp
 extern	void	init_known(void);
 extern	void	init_arrays(void);
-extern	int	solve_sudoku(void);
+extern	BOOL	SolvePuzzle(void);
 extern	bool	is_available(int i, int j, int n);
 extern	void	set_cell(int i, int j, int n);
 extern	int	clear_cell(int i, int j);
 extern	int	SaveData(HWND hwnd, char *szFileName, char *szAppName, BOOL csv);
 extern	int	GetData(HWND hwnd, char *szFileName, char *szAppName);
 extern	int	square(int i, int j);
-
 
 

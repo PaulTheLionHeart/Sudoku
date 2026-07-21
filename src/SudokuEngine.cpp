@@ -1,6 +1,27 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "sudoku.h"
+#include "generate.h"
+
+/*-----------------------------------------
+    SudokuEngine.cpp
+
+    Contains the core Sudoku solving engine.
+
+    The engine maintains bit-mask
+    representations of every row,
+    column and square for efficient
+    legality testing.
+
+    Two solving algorithms are available:
+
+	• Classic iterative backtracking
+	• Recursive MRV (Most Restricted Variable)
+
+    The MRV solver is also used by the
+    Sudoku generator when checking
+    puzzle uniqueness.
+  -----------------------------------------*/
 
 extern	int	ArraySize, SquareSize;			// ArraySize is the size of the side of the puzzle, SquareSize is the size of the side of a square
 
@@ -25,6 +46,8 @@ int rows[HEXARRAYSIZE];
 int cols[HEXARRAYSIZE];
 
 int bits[HEXARRAYSIZE + 1];				// An array with some powers of 2 to avoid shifting all the time
+
+//#define MRV_TRACE
 
 /*-----------------------------------------
 	Returns the index of the square the cell (i, j) belongs to
@@ -162,34 +185,213 @@ bool advance_cell(int i, int j)
     }
 
 /*-----------------------------------------
-	The main function, a fairly generic backtracking algorithms
-  -----------------------------------------*/
+Find the empty cell with the fewest legal values
+to minimise backtracking during the search.
 
-int solve_sudoku(void)
+TRUE  = empty cell found
+FALSE = board is completely filled
+-----------------------------------------*/
+
+BOOL	FindBestEmptyCellForSolver(int &bestRow, int &bestCol)
     {
-    int pos = 0;
-    while (1) 
+    int bestCount = ArraySize + 1;
+    BOOL found = FALSE;
+
+    for (int row = 0; row < ArraySize; row++)
 	{
-        while (pos < ArraySize * ArraySize && known[pos/ArraySize][pos%ArraySize]) 
-            ++pos;
-        if (pos >= ArraySize * ArraySize)
-            return 0;
-        if (advance_cell(pos/ArraySize, pos%ArraySize))
-	    ++pos;
-        else 
+	for (int col = 0; col < ArraySize; col++)
 	    {
-            do 
+	    if (known[row][col])
+		continue;
+
+	    int count = 0;
+
+	    for (int value = 1; value <= ArraySize; value++)
 		{
-                --pos;
-		} while (pos >= 0 && known[pos/ArraySize][pos%ArraySize]);
-            if (pos < 0) 
-                return -1;
+		if (is_available(row, col, value))
+		    count++;
+		}
+
+	    if (count < bestCount)
+		{
+		bestCount = count;
+		bestRow = row;
+		bestCol = col;
+		found = TRUE;
+
+		if (count <= 1)
+		    return TRUE;
+		}
 	    }
 	}
+
+    return found;
+    }
+
+  /*---------------------------------------------------------
+    Recursive Sudoku solver using the most-constrained-cell
+    heuristic.
+
+    Returns:
+	TRUE  - a solution has been found
+	FALSE - this branch has no solution
+  ---------------------------------------------------------*/
+
+int SolvePuzzleMRV(void)
+    {
+    int row;
+    int col;
+    static __int64 Nodes = 0;
+    int legal = 0;
+    static __int64 Backtracks = 0;
+
+#ifdef MRV_TRACE
+    OutputDebugStringA("Entering solve_sudoku\n");
+#endif
+
+    // Find the empty cell having the fewest legal candidates.
+    // If no empty cell remains, the puzzle is solved.
+    if (!FindBestEmptyCellForSolver(row, col))
+	return TRUE;
+
+#ifdef MRV_TRACE
+    char s[100];
+
+    sprintf(s, "Cell = (%d,%d)\n", row, col);
+    OutputDebugStringA(s);
+#endif
+
+    // Try every possible value in this cell.
+    for (int value = 1; value <= ArraySize; value++)
+	{
+	if (!is_available(row, col, value))
+	    {
+	    continue;
+	    }
+
+	legal++;
+
+#ifdef MRV_TRACE
+	sprintf(s, "Trying %d at (%d,%d)\n", value, row, col);
+	OutputDebugStringA(s);
+
+	Nodes++;
+
+	if ((Nodes % 100) == 0)
+	    {
+	    char s[100];
+
+	    sprintf(s, "Nodes = %I64d\n", Nodes);
+	    OutputDebugStringA(s);
+	    }
+#endif
+
+	// Place the trial value.
+	set_cell(row, col, value);
+	known[row][col] = 1;
+
+	// Search from this new position.
+	if (SolvePuzzleMRV())
+	    return TRUE;
+
+	// This value led to a dead end.
+	// Remove it and try the next value.
+	clear_cell(row, col);
+	known[row][col] = 0;
+	}
+
+#ifdef MRV_TRACE
+    sprintf(s, "Backtracking from (%d,%d), %d candidates examined\n", row, col, legal);
+    OutputDebugStringA(s);
+    Backtracks++;
+
+    if ((Backtracks % 1000) == 0)
+	{
+	sprintf(s, "Backtracks=%lld  Nodes=%lld\n", Backtracks, Nodes);
+	OutputDebugStringA(s);
+	}
+#endif
+
+    // No value worked in this cell.
+    return FALSE;
     }
 
 /*-----------------------------------------
-	Initialise the arrays
+    Classic iterative backtracking solver.
+
+    Retained as an alternative to the newer
+    MRV recursive solver for comparison and
+    experimentation.
+-----------------------------------------*/
+
+#ifndef USE_MRV_SOLVER
+BOOL	solve_sudoku(void)
+    {
+    int pos = 0;
+    while (1)
+	{
+	while (pos < ArraySize * ArraySize && known[pos / ArraySize][pos%ArraySize])
+	    ++pos;
+	if (pos >= ArraySize * ArraySize)
+	    return TRUE;		// solved
+	if (advance_cell(pos / ArraySize, pos%ArraySize))
+	    ++pos;
+	else
+	    {
+	    do
+		{
+		--pos;
+		} while (pos >= 0 && known[pos / ArraySize][pos%ArraySize]);
+		if (pos < 0)
+		    return FALSE;     // no solution
+	    }
+	}
+    }
+#endif
+
+/*-----------------------------------------
+    Solve the current Sudoku puzzle.
+
+    This routine selects the configured
+    solving algorithm, measures the elapsed
+    execution time, and reports the timing
+    information to the debug output.
+
+    Returns TRUE if a solution is found,
+    otherwise FALSE.
+  -----------------------------------------*/
+
+BOOL SolvePuzzle()
+    {
+    LARGE_INTEGER Frequency;
+    LARGE_INTEGER Start;
+    LARGE_INTEGER Finish;
+    BOOL Result;
+    char s[100];
+
+    QueryPerformanceFrequency(&Frequency);
+    QueryPerformanceCounter(&Start);
+    
+#ifdef USE_MRV_SOLVER
+    Result = SolvePuzzleMRV();
+#else
+    Result = solve_sudoku();
+#endif
+
+    QueryPerformanceCounter(&Finish);
+    double ElapsedMS = (1000.0 * (Finish.QuadPart - Start.QuadPart)) / Frequency.QuadPart;    
+    _snprintf_s(s, sizeof(s), _TRUNCATE, "Solver time = %.3f ms\n", ElapsedMS);
+    OutputDebugStringA(s);
+    return Result;
+    }
+
+/*-----------------------------------------
+    Initialise the Sudoku engine.
+
+    Clears the puzzle, resets the row,
+    column and square bit masks, and
+    prepares the lookup table used for
+    fast constraint checking.
   -----------------------------------------*/
 
 void init_arrays(void)
@@ -212,5 +414,15 @@ void init_arrays(void)
 	{
 	bits[n] = 1 << n;			// Initialise the arrays with powers of 2
 	}
+    }
+
+void SetSudokuMode(BOOL IsHex)
+    {
+    IsHEX = IsHex;
+
+    ArraySize = IsHEX ? HEXARRAYSIZE : NORMALARRAYSIZE;
+    SquareSize = IsHEX ? HEXSQUARESIZE : NORMALSQUARESIZE;
+
+    init_arrays();
     }
 

@@ -12,6 +12,7 @@ For complete explanations, examples and tutorials, see [Sudoku Help](UserGuide.m
 |-----|--------|
 | **S** | Select puzzle type (9×9 or 16×16) |
 | **C** | Create a new blank puzzle |
+| **G** | Generate a new Sudoku puzzle |
 | **Esc** | Close the current dialog |
 
 ---
@@ -40,6 +41,10 @@ For complete explanations, examples and tutorials, see [Sudoku Help](UserGuide.m
 
 | Button | Purpose |
 |--------|---------|
+| **Select** | Choose 9×9 or 16×16 Sudoku |
+| **Create** | Create a new blank puzzle |
+| **Generate** | Generate a new Sudoku puzzle |
+| **Original Puzzle** | Toggle original clue entry mode |
 | **Solve** | Solve the current puzzle |
 | **Refresh** | Clear the board and begin again |
 | **Save Sudoku** | Save the puzzle in native Sudoku format |
@@ -50,6 +55,21 @@ If an **Impasse** message appears, the current puzzle contains an inconsistency 
 
 ---
 
+# Puzzle Generation
+
+Press **G** or choose **Generate Sudoku**.
+
+Select:
+
+- Puzzle size
+- Difficulty
+- Symmetry
+
+Press **Generate** to create a new puzzle.
+
+---
+
 # See Also
 
 - [Sudoku Help](UserGuide.md)
+- [Revision History](RevisionHistory.md)

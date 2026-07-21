@@ -17,10 +17,12 @@ The program has been carefully modernised while preserving the simplicity, relia
 5. Solving a Puzzle
 6. Working with 9×9 Sudoku
 7. Working with 16×16 Sudoku
-8. Saving and Loading
-9. Tips
-10. Behind the Scenes
-11. FireEater's Corner
+8. Generating a Puzzle
+9. Saving and Loading
+10. Tips
+11. Behind the Scenes
+12. FireEater's Corner
+
 
 ---
 
@@ -120,6 +122,12 @@ Choose between 9×9 and 16×16 Sudoku.
 
 Create a new blank puzzle.
 
+## Generate
+
+Creates a new Sudoku puzzle automatically.
+
+The generator allows you to choose the puzzle size, difficulty and symmetry before generation begins.
+
 ## Original Puzzle
 
 Determines whether newly entered values are treated as original clues.
@@ -213,6 +221,36 @@ This approach provides a much cleaner interface than attempting to display sixte
 
 ---
 
+# Generating a Puzzle
+
+Sudoku can generate completely new puzzles for both 9×9 and 16×16 boards.
+
+Press **G** or choose **Generate Sudoku** from the menu.
+
+The Generate dialog allows you to choose:
+
+- Puzzle size
+- Difficulty
+- Symmetry
+
+Available symmetry options are:
+
+- Random
+- Rotational
+- Mirror
+
+Press **Generate** to begin.
+
+The generator first creates a complete Sudoku solution before carefully removing clues while repeatedly checking that the puzzle continues to have exactly one solution.
+
+Generation progress is displayed as the puzzle is created.
+
+Because uniqueness testing becomes increasingly difficult as clues are removed, the progress bar does not advance at a constant rate. Short pauses are therefore normal, particularly for 16×16 puzzles.
+
+When generation is complete, the new puzzle is displayed ready to solve.
+
+---
+
 # Saving and Loading
 
 Two file formats are supported.
@@ -238,6 +276,7 @@ Reloaded values become editable entries.
 - Right-click toggles Original/User colours.
 - Left-click removes completed values.
 - Use Solve whenever you wish the computer to finish the puzzle.
+- Press G to generate a new puzzle automatically.
 
 ---
 
@@ -252,6 +291,10 @@ Only the presentation differs.
 16×16 uses painted candidates and a hexadecimal value picker because displaying sixteen candidate buttons inside every cell would create over four thousand tiny controls.
 
 The goal of the project has always been to preserve the proven solving engine while modernising the architecture and user interface.
+
+Version 1.1 extends this philosophy by introducing an integrated puzzle generator.
+
+Rather than selecting puzzles from a stored database, Sudoku creates each puzzle on demand and verifies that it has exactly one solution before presenting it to the user.
 
 ---
 

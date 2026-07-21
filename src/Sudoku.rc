@@ -38,6 +38,7 @@ SUDOKU MENU
     {
         MENUITEM "Start Sudoku\tC", IDM_SELECTSUDOKU
         MENUITEM "Select Type(Hex or normal)\tS", IDM_SELECT_MODE
+        MENUITEM "Generate Sudoku\tG", IDM_GENERATESUDOKU
     }
     POPUP "&Help"
     {
@@ -57,12 +58,12 @@ STYLE DS_SETFONT | WS_CAPTION | WS_POPUP
 CAPTION "About Sudoku Solving Program"
 FONT 8, "MS Sans Serif"
 {
-    PUSHBUTTON      "OK", IDOK, 74, 94, 83, 14, WS_GROUP | NOT WS_TABSTOP
-    CTEXT           "Sudoku Solving Program", IDC_STATIC, 75, 17, 79, 8, SS_CENTER
-    CTEXT           "Copyright © Paul de Leeuw Computers 15/07/2026", IDC_STATIC, 33, 55, 164, 8, SS_CENTER
-    CTEXT           "ABN 72 360 922 562", IDC_STATIC, 42, 74, 147, 9, SS_CENTER
+    PUSHBUTTON      "OK", IDOK, 73, 94, 83, 14, WS_GROUP | NOT WS_TABSTOP
+    CTEXT           "Sudoku Solving and Generation Program", IDC_STATIC, 45, 17, 138, 8, SS_CENTER
+    CTEXT           "Copyright © Paul de Leeuw Computers 21/07/2026", IDC_STATIC, 33, 55, 164, 8, SS_CENTER
+    CTEXT           "ABN 72 360 922 562", IDC_STATIC, 41, 74, 147, 9, SS_CENTER
     ICON            IDI_ICON2, IDC_STATIC, 22, 9, 21, 20, SS_ICON
-    CTEXT           "Version 1.0a", IDC_STATIC, 75, 36, 40, 8, SS_CENTER
+    CTEXT           "Version 1.1", IDC_STATIC, 95, 36, 40, 8, SS_CENTER
 }
 
 
@@ -1289,6 +1290,34 @@ FONT 8, "Ms Shell Dlg"
     DEFPUSHBUTTON   "Save CSV", IDC_SAVE_CSV, 141, 451, 50, 14
     DEFPUSHBUTTON   "Save Sudoku", IDC_SAVESUDOKU, 212, 451, 48, 14
     AUTOCHECKBOX    "Original Puzzle?", IDC_ORIG, 207, 438, 66, 8
+}
+
+
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+GENERATEDLG DIALOG 0, 0, 402, 236
+STYLE DS_3DLOOK | DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_CAPTION | WS_VISIBLE | WS_POPUP | WS_SYSMENU
+CAPTION "Create New Puzzle"
+FONT 8, "Ms Shell Dlg"
+{
+    DEFPUSHBUTTON   "Generate", IDOK, 90, 198, 50, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 261, 198, 50, 14
+    AUTORADIOBUTTON "9×9 Sudoku", IDC_NORMAL, 100, 30, 55, 8, WS_GROUP
+    AUTORADIOBUTTON "16×16 Hexadecimal", IDC_HEX, 222, 30, 79, 8
+    AUTORADIOBUTTON "Easy", IDC_EASY, 57, 68, 31, 8, WS_GROUP
+    AUTORADIOBUTTON "Medium", IDC_MEDIUM, 137, 68, 41, 8
+    AUTORADIOBUTTON "Hard", IDC_HARD, 228, 68, 31, 8
+    AUTORADIOBUTTON "Expert", IDC_EXPERT, 309, 68, 36, 8
+    AUTORADIOBUTTON "Rotational", IDC_ROTATION_SYM, 63, 115, 43, 8, WS_GROUP
+    AUTORADIOBUTTON "Mirror", IDC_MIRROR, 179, 115, 43, 8
+    AUTORADIOBUTTON "Random", IDC_RANDOM, 296, 115, 43, 8
+    GROUPBOX        "Puzzle Type", IDC_STATIC, 24, 14, 353, 38
+    GROUPBOX        "Difficulty", IDC_STATIC, 24, 54, 353, 38
+    GROUPBOX        "Appearance", IDC_STATIC, 24, 98, 353, 38
+    GROUPBOX        "", IDC_STATIC, 23, 185, 353, 38
+    CONTROL         "", IDC_PROGRESS_BAR, PROGRESS_CLASS, 0, 128, 156, 225, 14
+    LTEXT           "Generating Sudoku...", IDC_GENERATE_STATUS, 46, 160, 68, 8, SS_LEFT
+    GROUPBOX        "Status", IDC_STATIC, 23, 142, 353, 38
 }
 
 
